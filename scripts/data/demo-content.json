@@ -1,0 +1,269 @@
+{
+  "signals": [
+    {
+      "org": "MTN Ghana", "signal_type": "tech_adoption", "importance": "important",
+      "title": "MTN Ghana deepens 5G rollout across major cities",
+      "description": "MTN expanded its 5G network coverage to additional commercial districts, targeting enterprise and high-ARPU consumer segments.",
+      "date": "2026-07-15",
+      "strategic_interpretation": "5G availability lowers the latency ceiling for fintech, IoT and enterprise cloud use cases — expect MoMo value-added services and B2B offerings to accelerate."
+    },
+    {
+      "org": "Wave Mobile Money", "signal_type": "market_position", "importance": "important",
+      "title": "Wave consolidates Ghanaian user base after pricing reset",
+      "description": "Wave's zero-deposit-fee model continues to pressure mobile money pricing across the market.",
+      "date": "2026-07-02",
+      "strategic_interpretation": "Price competition in MoMo is structural. Incumbents must defend via ecosystem lock-in, not fees."
+    },
+    {
+      "org": "Telecel Ghana", "signal_type": "expansion", "importance": "important",
+      "title": "Telecel completes Vodafone-to-Telecel brand migration",
+      "description": "The operator completed customer-facing rebranding and consolidation of the former Vodafone Ghana portfolio.",
+      "date": "2026-06-20",
+      "strategic_interpretation": "Post-merger integration is a window for fintech partners to reposition; new leadership is actively renegotiating partnerships."
+    },
+    {
+      "org": "mPharma", "signal_type": "expansion", "importance": "signal",
+      "title": "mPharma expands Mutti patient services to more regions",
+      "description": "mPharma extended its Mutti app and pharmacy network coverage, adding fulfilment capacity in underserved regions.",
+      "date": "2026-06-05",
+      "strategic_interpretation": "Healthtech fulfilment is consolidating around pharmacy networks — interoperability and supply chain are the real moats."
+    },
+    {
+      "org": "Zeepay", "signal_type": "funding", "importance": "important",
+      "title": "Zeepay secures additional capital for remittance expansion",
+      "description": "Zeepay raised follow-on capital to expand cross-border mobile money settlement and digital asset onboarding.",
+      "date": "2026-05-28",
+      "strategic_interpretation": "Diaspora remittance flows to Ghana remain a large, under-served market; payout rails are the key infrastructure play."
+    },
+    {
+      "org": "AT Ghana", "signal_type": "regulatory", "importance": "critical",
+      "title": "AT Ghana faces spectrum and consolidation headwinds",
+      "description": "The fourth network faces spectrum renewal costs and ongoing uncertainty over its strategic future amid market consolidation.",
+      "date": "2026-05-10",
+      "strategic_interpretation": "A four-operator market with three strong players is unsustainable long-term — watch for further consolidation and its effect on wholesale connectivity pricing."
+    },
+    {
+      "org": "Kofa", "signal_type": "product", "importance": "signal",
+      "title": "Kofa expands battery swap network in Accra",
+      "description": "Kofa added swap stations and household energy products, growing its pay-as-you-go energy footprint.",
+      "date": "2026-04-18",
+      "strategic_interpretation": "Energy access tech is moving from pilot to network economics — distribution density is the competitive variable."
+    },
+    {
+      "org": "Zipline", "signal_type": "expansion", "importance": "important",
+      "title": "Zipline extends medical drone coverage to additional districts",
+      "description": "Zipline's Ghana operation expanded delivery coverage, reinforcing the national medical supply network.",
+      "date": "2026-04-02",
+      "strategic_interpretation": "Drone logistics has become critical national infrastructure; adjacent cold-chain and commercial use cases are opening."
+    },
+    {
+      "org": "Hubtel", "signal_type": "product", "importance": "signal",
+      "title": "Hubtel integrates AI-assisted customer service for merchants",
+      "description": "Hubtel added conversational AI features to its merchant engagement products.",
+      "date": "2026-03-14",
+      "strategic_interpretation": "Conversational AI is becoming table stakes in merchant SaaS — differentiation shifts to integrations and data."
+    },
+    {
+      "org": "GhanaPostGPS", "signal_type": "tech_adoption", "importance": "signal",
+      "title": "GhanaPostGPS integrates with financial inclusion programs",
+      "description": "The addressing system is being used to onboard unbanked individuals with verified locations for financial services.",
+      "date": "2026-03-01",
+      "strategic_interpretation": "Digital addressing is quietly becoming the identity-adjacent layer for financial inclusion."
+    }
+  ],
+  "opportunities": [
+    {
+      "title": "AI-native SME bookkeeping and tax compliance for Ghanaian businesses",
+      "classification": "BUILD_NOW", "attractiveness": 0.88, "confidence": 0.62,
+      "sector": "Fintech",
+      "problem": "Millions of Ghanaian SMEs run informal books; GRA digitalisation is increasing compliance pressure without tools to meet it.",
+      "market": "Ghana's ~1.4M registered SMEs; GRA's VAT and income tax digitalisation agenda.",
+      "why_now": "GRA e-VAT and digital tax initiatives, AI document understanding, and MoMo transaction data create the ingredients for automated bookkeeping.",
+      "existing_alternatives": ["Manual spreadsheets", "Traditional accountants", "GRA portal tools"],
+      "current_competitors": ["Hubtel", "ExpressPay"],
+      "technology_required": ["GenAI", "Machine Learning", "Open Banking APIs"],
+      "barriers": ["Trust in AI-driven tax filings", "Accountant channel resistance", "Data quality"],
+      "potential_customers": "SME owners, accountants, fintechs needing financial data",
+      "business_model": "Subscription SaaS + per-filing fees + accountant marketplace revenue share",
+      "evidence": ["GRA digitalisation announcements", "mPharma-style vertical SaaS adoption in Ghana"]
+    },
+    {
+      "title": "Embedded insurance distribution via mobile money agents",
+      "classification": "EARLY_BET", "attractiveness": 0.82, "confidence": 0.55,
+      "sector": "Insurtech",
+      "problem": "Insurance penetration in Ghana is below 2%; distribution is the binding constraint, and MoMo agents are the highest-trust retail touchpoint.",
+      "market": "600k+ MoMo agents and 25M+ mobile money wallets.",
+      "why_now": "Open APIs, digital identity (GhanaCard), and proven microinsurance models (BIMA, MicroEnsure) de-risk the wedge.",
+      "existing_alternatives": ["Bank branches", "Insurance agents", "Telco airtime scratch cards"],
+      "current_competitors": ["BIMA Ghana", "MicroEnsure"],
+      "technology_required": ["Mobile Money APIs", "Digital Identity", "Conversational AI"],
+      "barriers": ["Agent incentive design", "Regulatory licensing", "Claims trust"],
+      "potential_customers": "MoMo agents, insurers, telcos",
+      "business_model": "B2B2C: sell distribution tech + API to insurers; per-policy commissions",
+      "evidence": ["BIMA and MicroEnsure Ghana operations", "MoMo agent network scale"]
+    },
+    {
+      "title": "B2B distribution digitisation for Ghana's FMCG value chain",
+      "classification": "BUILD_NOW", "attractiveness": 0.85, "confidence": 0.58,
+      "sector": "Logistics & Mobility",
+      "problem": "FMCG distribution runs on paper orders, informal credit and fragmented fleets; wholesalers and retailers lose margin to inefficiency.",
+      "market": "Top 50 FMCG distributors, 100k+ retail outlets, growing e-commerce penetration.",
+      "why_now": "Delivery networks (Hubtel, Swoove) exist but lack the B2B ordering-and-credit layer; fintech credit data is maturing.",
+      "existing_alternatives": ["Sales rep phone orders", "Cash-and-carry", "Informal credit"],
+      "current_competitors": ["Hubtel", "Swoove"],
+      "technology_required": ["Mobile Money APIs", "Machine Learning", "IoT Sensors"],
+      "barriers": ["Route-to-market margins", "Retailer technology literacy", "Working capital"],
+      "potential_customers": "FMCG distributors, wholesalers, retail chains",
+      "business_model": "Per-order SaaS fee + embedded working-capital finance spread",
+      "evidence": ["Swoove and Hubtel delivery traction", "FMCG digitalisation pilots"]
+    },
+    {
+      "title": "GhanaCard-linked health benefits verification layer",
+      "classification": "WATCH", "attractiveness": 0.74, "confidence": 0.5,
+      "sector": "Healthtech",
+      "problem": "Health insurance verification is manual and slow, delaying care; digital identity can automate eligibility.",
+      "market": "NHIS (~16M members) and private insurers; hospital networks nationwide.",
+      "why_now": "GhanaCard biometric identity is near-universal; EMR adoption is accelerating.",
+      "existing_alternatives": ["Paper NHIS cards", "Manual verification calls"],
+      "current_competitors": [],
+      "technology_required": ["Digital Identity", "EMR / Health Records", "Open Banking APIs"],
+      "barriers": ["NHIS procurement", "Data protection compliance", "Hospital workflows"],
+      "potential_customers": "NHIS, private insurers, hospitals, HMOs",
+      "business_model": "Per-verification API fee + SaaS for hospitals",
+      "evidence": ["GhanaCard rollout", "mPharma network scale"]
+    },
+    {
+      "title": "Creator and SME local payment monetisation infrastructure",
+      "classification": "WHITE_SPACE", "attractiveness": 0.68, "confidence": 0.42,
+      "sector": "Media & Content",
+      "problem": "Ghanaian creators and digital merchants have no reliable local rails for subscriptions, tipping and monetised content.",
+      "market": "Growing creator economy; diaspora content demand; social commerce growth.",
+      "why_now": "MoMo and card rails are mature but fragmented; no local Gumroad/Lemon Squeezy equivalent exists for Ghana.",
+      "existing_alternatives": ["Bank transfers", "PayPal workarounds", "WhatsApp ordering"],
+      "current_competitors": ["Hubtel", "GhanaPay"],
+      "technology_required": ["Mobile Money APIs", "Open Banking APIs", "Conversational AI"],
+      "barriers": ["Consumer willingness to pay", "KYC friction", "Fraud management"],
+      "potential_customers": "Creators, podcasters, course sellers, digital merchants",
+      "business_model": "Per-transaction fee + subscription SaaS",
+      "evidence": ["Social commerce growth", "Diaspora demand signals"]
+    },
+    {
+      "title": "Cold-chain and temperature-monitored logistics as a service",
+      "classification": "EARLY_BET", "attractiveness": 0.72, "confidence": 0.48,
+      "sector": "Logistics & Mobility",
+      "problem": "Pharma, agro-export and FMCG cold chains lack affordable monitoring; spoilage destroys value.",
+      "market": "Zipline's medical network, agro-exporters (cocoa, mango, pineapple), pharma distributors.",
+      "why_now": "IoT sensor costs have collapsed; LEO connectivity enables rural monitoring; export standards tighten.",
+      "existing_alternatives": ["Manual temperature logs", "Unmonitored cold vans"],
+      "current_competitors": ["Zipline", "Swoove"],
+      "technology_required": ["IoT Sensors", "LEO Satellite Internet", "GIS & Remote Sensing"],
+      "barriers": ["Hardware capital cost", "Refrigerated fleet scarcity", "Standards enforcement"],
+      "potential_customers": "Pharma distributors, agro-exporters, logistics firms",
+      "business_model": "Hardware-as-a-service + monitoring subscription",
+      "evidence": ["Zipline cold chain operations", "Agro-export growth"]
+    }
+  ],
+  "events": [
+    { "org": "MTN Ghana", "event_type": "product", "title": "MTN MoMo launches updated merchant API suite", "description": "Expanded API documentation and sandbox for third-party developers.", "date": "2026-06-25", "importance": "important" },
+    { "org": "Wave Mobile Money", "event_type": "expansion", "title": "Wave Ghana passes milestone in registered users", "description": "Wave reported continued growth in its Ghanaian wallet base.", "date": "2026-06-10", "importance": "signal" },
+    { "org": "Telecel Ghana", "event_type": "product", "title": "Telecel rebrands mobile money to Telecel Cash", "description": "Former Vodafone Cash customers migrated to the new brand.", "date": "2026-05-22", "importance": "important" },
+    { "org": "mPharma", "event_type": "expansion", "title": "mPharma opens additional Mutti fulfilment hubs", "description": "New fulfilment capacity for patient medicine delivery.", "date": "2026-05-08", "importance": "signal" },
+    { "org": "Zeepay", "event_type": "funding", "title": "Zeepay announces follow-on financing", "description": "Capital to scale remittance payout infrastructure.", "date": "2026-04-30", "importance": "important" },
+    { "org": "Kofa", "event_type": "product", "title": "Kofa launches Jua home battery in new communities", "description": "PAYG home energy product expanded to additional Accra communities.", "date": "2026-04-12", "importance": "signal" },
+    { "org": "GhanaPostGPS", "event_type": "product", "title": "GhanaPostGPS releases developer API", "description": "Address verification APIs opened to fintech and delivery platforms.", "date": "2026-03-20", "importance": "important" },
+    { "org": "Hubtel", "event_type": "product", "title": "Hubtel ships AI-assisted support for merchants", "description": "Conversational AI features added to merchant tools.", "date": "2026-03-05", "importance": "signal" },
+    { "org": "AmaliTech", "event_type": "hiring", "title": "AmaliTech expands engineering hiring", "description": "Significant growth in developer headcount for global client delivery.", "date": "2026-02-18", "importance": "signal" },
+    { "org": "MEST", "event_type": "leadership", "title": "MEST announces new cohort and expanded program", "description": "New entrepreneurial training cohort for West Africa.", "date": "2026-02-01", "importance": "signal" }
+  ],
+  "regulations": [
+    {
+      "title": "Bank of Ghana Open Banking Framework",
+      "body": "The Bank of Ghana's open banking framework requires participating institutions to expose standardised data and payment APIs, enabling third-party innovation under consent.",
+      "agency": "Bank of Ghana", "sector_ids": ["fintech", "digital-banking", "payments"],
+      "status": "in_force", "published_date": "2024-05-15", "effective_date": "2025-01-01"
+    },
+    {
+      "title": "E-Levy Repeal",
+      "body": "The Electronic Transfer Levy was repealed, removing the 1% charge on mobile money and electronic transfers, reducing friction for digital payments.",
+      "agency": "Government of Ghana", "sector_ids": ["mobile-money", "fintech", "payments"],
+      "status": "in_force", "published_date": "2024-07-05", "effective_date": "2024-07-05"
+    },
+    {
+      "title": "Data Protection Act 2012 (Act 843) enforcement",
+      "body": "The Data Protection Commission continues enforcement of the Data Protection Act, mandating registration and compliance for data controllers and processors.",
+      "agency": "Data Protection Commission", "sector_ids": ["fintech", "ai-data", "enterprise-saas", "healthtech"],
+      "status": "in_force", "published_date": "2012-10-16", "effective_date": "2012-12-01"
+    }
+  ],
+  "reports": [
+    {
+      "title": "Ghana Fintech Landscape — Intelligence Brief",
+      "report_type": "sector",
+      "status": "published",
+      "generated_at": "2026-08-01",
+      "content": {
+        "executive_summary": "Ghana's fintech sector is consolidating around mobile money rails, open banking and embedded finance. Incumbents (MTN, banks) control infrastructure; startups win on distribution and niche verticals. The next growth wave will be driven by AI-native SME tools and insurance distribution.",
+        "stats": [
+          { "label": "Tracked organisations", "value": "45+" },
+          { "label": "Fintech orgs", "value": "18" },
+          { "label": "Tracked funding", "value": "$268M+" },
+          { "label": "Critical signals", "value": "3" }
+        ],
+        "sections": [
+          { "title": "Market structure", "summary": "Three telecom operators, a consolidating banking sector and a deep bench of fintech startups create a layered market: rails, products and distribution." },
+          { "title": "Capital flows", "summary": "Public rounds are scarce post-2021; capital is concentrating in proven teams and infrastructure plays." },
+          { "title": "Regulatory posture", "summary": "Open banking framework and e-levy repeal signal a pro-innovation stance; data protection enforcement is rising." }
+        ],
+        "players": [{ "name": "MTN Ghana", "slug": "mtn-ghana" }, { "name": "Zeepay", "slug": "zeepay" }, { "name": "Wave Mobile Money", "slug": "wave-mobile-money" }, { "name": "mPharma", "slug": "mpharma" }],
+        "recommendations": [
+          "For builders: pursue AI-native SME finance tools — the infrastructure exists, the applications do not.",
+          "For investors: distribution-led models (agents, merchants) beat pure-tech in current market conditions.",
+          "For enterprises: API-first partnerships with fintechs are cheaper than building payments in-house."
+        ]
+      }
+    },
+    {
+      "title": "Daily Intelligence Brief",
+      "report_type": "daily_brief",
+      "status": "published",
+      "generated_at": "2026-08-10",
+      "content": {
+        "executive_summary": "Today's key movements: MTN's 5G expansion continues to open enterprise opportunities; Telecel's brand migration is creating partnership churn; agritech consolidation around data platforms accelerates.",
+        "stats": [
+          { "label": "New signals", "value": "2" },
+          { "label": "Critical", "value": "0" },
+          { "label": "Important", "value": "1" },
+          { "label": "Watchlist orgs", "value": "8" }
+        ],
+        "sections": [
+          { "title": "Telecom & connectivity", "summary": "5G coverage expansion in commercial districts; spectrum dynamics unchanged." },
+          { "title": "Fintech", "summary": "MoMo pricing pressure persists; remittance infrastructure investment continues." },
+          { "title": "Vertical tech", "summary": "Healthtech and agritech both show network-expansion signals." }
+        ],
+        "players": [{ "name": "MTN Ghana", "slug": "mtn-ghana" }, { "name": "Telecel Ghana", "slug": "telecel-ghana" }, { "name": "Kofa", "slug": "kofa" }],
+        "recommendations": [
+          "Monitor Telecel partnership renegotiations for enterprise opportunities.",
+          "Watch Wave's next pricing move — it will reset market expectations again."
+        ]
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "MTN Ghana expands 5G to more commercial districts",
+      "url": "https://www.myjoyonline.com", "publisher": "MyJoyOnline", "published_date": "2026-07-15", "summary": "MTN's 5G rollout reaches additional business districts."
+    },
+    {
+      "title": "Bank of Ghana pushes open banking adoption among banks",
+      "url": "https://www.citifmonline.com", "publisher": "Citi Newsroom", "published_date": "2026-06-30", "summary": "Regulator urges faster API adoption across financial institutions."
+    },
+    {
+      "title": "Ghana's tech hubs drive regional developer growth",
+      "url": "https://techcabal.com", "publisher": "TechCabal", "published_date": "2026-05-20", "summary": "Hubs like MEST, iSpace and Kumasi Hive expand programs."
+    },
+    {
+      "title": "Zipline Ghana expands medical drone delivery network",
+      "url": "https://www.ghanaweb.com", "publisher": "GhanaWeb", "published_date": "2026-04-05", "summary": "National medical supply coverage extended to more districts."
+    }
+  ]
+}

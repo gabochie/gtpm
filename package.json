@@ -1,0 +1,25 @@
+{
+  "name": "gtpm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GTPM — Ghana Technology & Power Map. Continuous technology intelligence + competitive strategy platform.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply gtpm-db",
+    "db:seed": "node scripts/generate-seed.mjs && wrangler d1 execute gtpm-db --file=seed/seed.sql",
+    "db:seed:local": "node scripts/generate-seed.mjs && wrangler d1 execute gtpm-db --local --file=seed/seed.sql",
+    "db:query": "wrangler d1 execute gtpm-db --command"
+  },
+  "dependencies": {
+    "hono": "^4.6.14"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260810.1",
+    "typescript": "^5.7.2",
+    "wrangler": "^4.120.1"
+  }
+}

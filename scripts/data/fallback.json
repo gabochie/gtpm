@@ -1,0 +1,427 @@
+{
+  "organizations": [
+    {
+      "name": "MTN Ghana", "org_type": "telecom", "description": "Ghana's largest telecommunications and mobile money operator, subsidiary of MTN Group. Operates MTN MoMo, the country's dominant mobile money wallet with over 16 million active users.",
+      "founded_year": 1996, "hq_city": "Accra", "website": "https://www.mtn.com.gh", "employee_count": 3000,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.95, "monitor_frequency": "weekly",
+      "sectors": ["Telecommunications", "Mobile Money", "Fintech"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "leading" }, { "name": "5G", "adoption": "piloting" }, { "name": "USSD", "adoption": "leading" }],
+      "people": [{ "name": "Selorm Adadevoh", "role": "founder", "title": "CEO", "is_founder": false }],
+      "sources": [{ "url": "https://www.mtn.com.gh", "title": "MTN Ghana corporate site", "publisher": "MTN Ghana", "source_type": "corporate", "reliability": 0.85 }]
+    },
+    {
+      "name": "Telecel Ghana", "org_type": "telecom", "description": "Telecommunications operator formed when Telecel Group acquired Vodafone Ghana in 2024. Third-largest mobile network; rebranded from Vodafone in late 2024.",
+      "founded_year": 2008, "hq_city": "Accra", "website": "https://www.telecel.com.gh", "employee_count": 1200,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.9, "monitor_frequency": "weekly",
+      "sectors": ["Telecommunications", "Mobile Money", "Fintech"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "adopting" }, { "name": "USSD", "adoption": "leading" }],
+      "people": [{ "name": "Patricia Obo-Nai", "role": "founder", "title": "CEO", "is_founder": false }],
+      "sources": [{ "url": "https://www.telecel.com.gh", "title": "Telecel Ghana corporate site", "publisher": "Telecel Ghana", "source_type": "corporate", "reliability": 0.85 }]
+    },
+    {
+      "name": "AT Ghana", "org_type": "telecom", "description": "Telecommunications operator formed from the merger of Airtel Ghana and Tigo Ghana (formerly Millicom) in 2017; branded AT from 2021. Fourth-largest network.",
+      "founded_year": 2017, "hq_city": "Accra", "website": "https://www.atghana.com", "employee_count": 900,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.85, "monitor_frequency": "weekly",
+      "sectors": ["Telecommunications", "Mobile Money"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "adopting" }, { "name": "USSD", "adoption": "leading" }],
+      "sources": [{ "url": "https://www.atghana.com", "title": "AT Ghana corporate site", "publisher": "AT Ghana", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "GCB Bank", "org_type": "bank", "description": "Ghana's largest indigenous commercial bank, majority state-owned, listed on the Ghana Stock Exchange. Leader in digital banking rollout among local banks.",
+      "founded_year": 1953, "hq_city": "Accra", "website": "https://www.gcbbank.com.gh", "employee_count": 2500,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.95, "monitor_frequency": "monthly",
+      "sectors": ["Digital Banking", "Fintech"],
+      "technologies": [{ "name": "Open Banking APIs", "adoption": "exploring" }, { "name": "Cloud Computing", "adoption": "adopting" }],
+      "sources": [{ "url": "https://www.gcbbank.com.gh", "title": "GCB Bank corporate site", "publisher": "GCB Bank", "source_type": "corporate", "reliability": 0.85 }]
+    },
+    {
+      "name": "Ecobank Ghana", "org_type": "bank", "description": "Ghana subsidiary of pan-African Ecobank Group. Runs Ecobank Mobile and the Ecobank Instant Payment platform.",
+      "founded_year": 1990, "hq_city": "Accra", "website": "https://www.ecobank.com/gh", "employee_count": 1800,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.95, "monitor_frequency": "monthly",
+      "sectors": ["Digital Banking", "Payments", "Fintech"],
+      "technologies": [{ "name": "Open Banking APIs", "adoption": "adopting" }, { "name": "Cloud Computing", "adoption": "adopting" }],
+      "sources": [{ "url": "https://www.ecobank.com/gh", "title": "Ecobank Ghana corporate site", "publisher": "Ecobank", "source_type": "corporate", "reliability": 0.85 }]
+    },
+    {
+      "name": "Absa Bank Ghana", "org_type": "bank", "description": "Ghana subsidiary of Absa Group (ex-Barclays Africa). Strong digital banking and corporate banking franchise.",
+      "founded_year": 1916, "hq_city": "Accra", "website": "https://www.absa.com.gh", "employee_count": 1500,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.95, "monitor_frequency": "monthly",
+      "sectors": ["Digital Banking", "Fintech"],
+      "technologies": [{ "name": "Open Banking APIs", "adoption": "exploring" }],
+      "sources": [{ "url": "https://www.absa.com.gh", "title": "Absa Ghana corporate site", "publisher": "Absa Group", "source_type": "corporate", "reliability": 0.85 }]
+    },
+    {
+      "name": "Fidelity Bank Ghana", "org_type": "bank", "description": "Ghanaian commercial bank, a subsidiary of Fidelity Bank Ghana Ltd. Known for SME banking and agent banking (Fidelity SmartPay).",
+      "founded_year": 2006, "hq_city": "Accra", "website": "https://www.fidelitybank.com.gh", "employee_count": 1600,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.9, "monitor_frequency": "monthly",
+      "sectors": ["Digital Banking", "Fintech", "Lending & Credit"],
+      "technologies": [{ "name": "USSD", "adoption": "adopting" }, { "name": "Machine Learning", "adoption": "exploring" }],
+      "sources": [{ "url": "https://www.fidelitybank.com.gh", "title": "Fidelity Bank corporate site", "publisher": "Fidelity Bank", "source_type": "corporate", "reliability": 0.85 }]
+    },
+    {
+      "name": "Stanbic Bank Ghana", "org_type": "bank", "description": "Ghana subsidiary of Standard Bank Group. Digital corporate banking and SME lending.",
+      "founded_year": 1999, "hq_city": "Accra", "website": "https://www.stanbicbank.com.gh", "employee_count": 1000,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.95, "monitor_frequency": "monthly",
+      "sectors": ["Digital Banking", "Enterprise SaaS"],
+      "technologies": [],
+      "sources": [{ "url": "https://www.stanbicbank.com.gh", "title": "Stanbic Bank corporate site", "publisher": "Stanbic Bank", "source_type": "corporate", "reliability": 0.85 }]
+    },
+    {
+      "name": "Zeepay", "org_type": "startup", "description": "Ghanaian fintech specialising in mobile money payout infrastructure, remittance settlement and digital asset onboarding. Backed by African and diaspora investors; operates across Africa and the Caribbean.",
+      "founded_year": 2014, "hq_city": "Accra", "website": "https://www.zeepay.com", "employee_count": 120,
+      "funding_status": "funded", "status": "active", "verification_status": "verified", "confidence": 0.85, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Fintech", "Mobile Money", "Payments"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "leading" }, { "name": "USSD", "adoption": "adopting" }],
+      "people": [{ "name": "Fiifi Baidoo", "role": "founder", "title": "Founder & CEO", "is_founder": true }],
+      "funding": [
+        { "round_type": "series_a", "amount_usd": 5000000, "date": "2022-06", "investors": ["Verdant Capital"], "lead_investor": "Verdant Capital", "confidence": 0.6 },
+        { "round_type": "seed", "amount_usd": 2500000, "date": "2019-11", "investors": ["African Fintech Foundry"], "lead_investor": "African Fintech Foundry", "confidence": 0.55 }
+      ],
+      "products": [
+        { "name": "Zeepay MoMo Payout", "description": "Cross-border mobile money payout API for remittance operators.", "category": "payments", "url": "https://www.zeepay.com" },
+        { "name": "Zeepay Settlement", "description": "Mobile money settlement and treasury services for banks.", "category": "payments" }
+      ],
+      "competitors": [{ "name": "ExpressPay", "competition_type": "direct" }, { "name": "Hubtel", "competition_type": "direct" }],
+      "sources": [{ "url": "https://www.zeepay.com", "title": "Zeepay corporate site", "publisher": "Zeepay", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "ExpressPay", "org_type": "startup", "description": "Ghanaian payments company offering consumer payments, bill aggregation, school fee payments and merchant acquiring. One of the longest-running local payment platforms.",
+      "founded_year": 2008, "hq_city": "Accra", "website": "https://www.expresspaygh.com", "employee_count": 80,
+      "funding_status": "funded", "status": "active", "verification_status": "verified", "confidence": 0.8, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Fintech", "Payments"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "leading" }, { "name": "USSD", "adoption": "leading" }],
+      "people": [{ "name": "Derrick Dankyi", "role": "founder", "title": "Founder & CEO", "is_founder": true }],
+      "products": [
+        { "name": "ExpressPay Consumer App", "description": "Bill payments, airtime and merchant payments for consumers.", "category": "payments", "url": "https://www.expresspaygh.com" },
+        { "name": "ExpressPay Merchant Gateway", "description": "Online and POS payment gateway for merchants.", "category": "payments" }
+      ],
+      "competitors": [{ "name": "Hubtel", "competition_type": "direct" }, { "name": "Zeepay", "competition_type": "direct" }],
+      "partnerships": [{ "org_b": "MTN Ghana", "partnership_type": "strategic", "description": "MoMo integration for bill payments" }],
+      "sources": [{ "url": "https://www.expresspaygh.com", "title": "ExpressPay corporate site", "publisher": "ExpressPay", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "Hubtel", "org_type": "startup", "description": "Ghanaian digital commerce super-app: messaging APIs, payments, logistics, merchant services and an on-demand delivery network. One of the country's largest local platforms by transaction volume.",
+      "founded_year": 2011, "hq_city": "Accra", "website": "https://hubtel.com", "employee_count": 300,
+      "funding_status": "funded", "status": "active", "verification_status": "verified", "confidence": 0.85, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Fintech", "Payments", "Logistics & Mobility", "Enterprise SaaS"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "leading" }, { "name": "USSD", "adoption": "leading" }, { "name": "Conversational AI", "adoption": "adopting" }],
+      "people": [{ "name": "Ernest Boateng", "role": "founder", "title": "Group CEO", "is_founder": true }],
+      "products": [
+        { "name": "Hubtel Payments", "description": "Payment gateway with MoMo, card and bank rails.", "category": "payments", "url": "https://hubtel.com" },
+        { "name": "Hubtel SMS", "description": "Bulk messaging API platform for enterprises.", "category": "messaging" },
+        { "name": "Hubtel Delivery", "description": "On-demand last-mile delivery network.", "category": "logistics" }
+      ],
+      "competitors": [{ "name": "ExpressPay", "competition_type": "direct" }, { "name": "Zeepay", "competition_type": "indirect" }, { "name": "Swoove", "competition_type": "indirect" }],
+      "sources": [{ "url": "https://hubtel.com", "title": "Hubtel corporate site", "publisher": "Hubtel", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "Wave Mobile Money", "org_type": "startup", "description": "Mobile money operator (Senegal-founded, pan-African) with a substantial Ghanaian user base and a licensed mobile money business. Disrupted pricing with zero-fee deposits and low transfer fees.",
+      "founded_year": 2017, "hq_city": "Accra", "website": "https://www.wave.com.gh", "employee_count": 250,
+      "funding_status": "funded", "status": "active", "verification_status": "reported", "confidence": 0.75, "monitor_frequency": "weekly",
+      "sectors": ["Mobile Money", "Fintech"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "leading" }, { "name": "USSD", "adoption": "leading" }, { "name": "Machine Learning", "adoption": "adopting" }],
+      "funding": [
+        { "round_type": "series_b", "amount_usd": 200000000, "date": "2021-08", "investors": ["Sequoia Capital", "Founders Fund", "Stripe", "Ribbit Capital"], "lead_investor": "Sequoia Capital", "confidence": 0.85 }
+      ],
+      "products": [{ "name": "Wave App", "description": "Consumer mobile money wallet with free deposits.", "category": "payments", "url": "https://www.wave.com.gh" }],
+      "competitors": [{ "name": "MTN Ghana", "competition_type": "direct" }, { "name": "Telecel Ghana", "competition_type": "direct" }],
+      "sources": [{ "url": "https://www.wave.com.gh", "title": "Wave corporate site", "publisher": "Wave", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "mPharma", "org_type": "startup", "description": "Healthtech company digitising pharmacy supply and patient care across Africa. Operates the Mutti patient app and pharmacy network management across Ghana, Nigeria, Kenya and Zambia.",
+      "founded_year": 2013, "hq_city": "Accra", "website": "https://www.mpharma.com", "employee_count": 400,
+      "funding_status": "funded", "status": "active", "verification_status": "verified", "confidence": 0.9, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Healthtech", "Enterprise SaaS"],
+      "technologies": [{ "name": "EMR / Health Records", "adoption": "adopting" }, { "name": "Cloud Computing", "adoption": "leading" }],
+      "people": [{ "name": "Gregory Rockson", "role": "founder", "title": "Co-founder & CEO", "is_founder": true }, { "name": "Daniel Shu", "role": "founder", "title": "Co-founder", "is_founder": true }],
+      "funding": [
+        { "round_type": "series_b", "amount_usd": 17000000, "date": "2019-10", "investors": ["Novastar Ventures", "Accion"], "lead_investor": "Novastar Ventures", "confidence": 0.7 },
+        { "round_type": "series_c", "amount_usd": 36000000, "date": "2022-09", "investors": ["JAM Fund"], "lead_investor": "JAM Fund", "confidence": 0.55 }
+      ],
+      "products": [
+        { "name": "Mutti", "description": "Patient app for medicine ordering, adherence and telehealth.", "category": "consumer health", "url": "https://www.mpharma.com" },
+        { "name": "Vend", "description": "Pharmacy inventory and procurement platform.", "category": "pharmacy SaaS" }
+      ],
+      "competitors": [{ "name": "Susu Health", "competition_type": "indirect" }],
+      "sources": [{ "url": "https://www.mpharma.com", "title": "mPharma corporate site", "publisher": "mPharma", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "Susu Health", "org_type": "startup", "description": "Ghanaian healthtech enabling health savings (susu) for medical expenses, with a network of partner clinics and pharmacies.",
+      "founded_year": 2018, "hq_city": "Accra", "website": "https://www.susuhealth.com", "employee_count": 30,
+      "funding_status": "funded", "status": "active", "verification_status": "reported", "confidence": 0.6, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Healthtech", "Fintech", "Insurtech"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "adopting" }],
+      "products": [{ "name": "Susu Health Savings", "description": "Health savings wallet for individuals and families.", "category": "health finance", "url": "https://www.susuhealth.com" }],
+      "competitors": [{ "name": "mPharma", "competition_type": "indirect" }],
+      "sources": [{ "url": "https://www.susuhealth.com", "title": "Susu Health corporate site", "publisher": "Susu Health", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "Esoko", "org_type": "startup", "description": "Pioneering Ghanaian agritech providing market prices, farm management and advisory services to smallholder farmers and agribusinesses.",
+      "founded_year": 2009, "hq_city": "Accra", "website": "https://esoko.com", "employee_count": 60,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.8, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Agritech", "Enterprise SaaS"],
+      "technologies": [{ "name": "GIS & Remote Sensing", "adoption": "adopting" }, { "name": "USSD", "adoption": "leading" }],
+      "people": [{ "name": "Mark Davies", "role": "founder", "title": "CEO", "is_founder": false }],
+      "products": [{ "name": "Esoko Platform", "description": "Market information and farm management for agribusinesses.", "category": "agritech SaaS", "url": "https://esoko.com" }],
+      "competitors": [{ "name": "AgroCenta", "competition_type": "direct" }, { "name": "Farmerline", "competition_type": "direct" }],
+      "sources": [{ "url": "https://esoko.com", "title": "Esoko corporate site", "publisher": "Esoko", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "Farmerline", "org_type": "startup", "description": "Ghanaian agritech providing data, advisory and fintech services to smallholder farmers. Merged with Mergdata in 2023 to form a pan-African agri-intelligence company.",
+      "founded_year": 2013, "hq_city": "Kumasi", "website": "https://farmerline.co", "employee_count": 100,
+      "funding_status": "funded", "status": "active", "verification_status": "verified", "confidence": 0.85, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Agritech", "Enterprise SaaS"],
+      "technologies": [{ "name": "Machine Learning", "adoption": "adopting" }, { "name": "GIS & Remote Sensing", "adoption": "adopting" }],
+      "people": [{ "name": "Alloysius Attah", "role": "founder", "title": "Co-founder & CEO", "is_founder": true }, { "name": "Daniel Michael Asare", "role": "founder", "title": "Co-founder", "is_founder": true }],
+      "funding": [
+        { "round_type": "seed", "amount_usd": 1100000, "date": "2020-05", "investors": ["Meridian", "Innohub"], "lead_investor": "Meridian", "confidence": 0.5 }
+      ],
+      "products": [{ "name": "Mergdata", "description": "Farmer data intelligence and traceability platform.", "category": "agritech SaaS", "url": "https://mergdata.com" }],
+      "competitors": [{ "name": "Esoko", "competition_type": "direct" }, { "name": "AgroCenta", "competition_type": "direct" }, { "name": "Complete Farmer", "competition_type": "direct" }],
+      "sources": [{ "url": "https://farmerline.co", "title": "Farmerline corporate site", "publisher": "Farmerline", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "AgroCenta", "org_type": "startup", "description": "Ghanaian agritech marketplace connecting smallholder farmers to buyers, with input financing and logistics. Winner of global agtech awards.",
+      "founded_year": 2015, "hq_city": "Accra", "website": "https://agrocenta.com", "employee_count": 50,
+      "funding_status": "funded", "status": "active", "verification_status": "verified", "confidence": 0.75, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Agritech", "Lending & Credit"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "adopting" }, { "name": "USSD", "adoption": "adopting" }],
+      "people": [{ "name": "Michael Ocansey", "role": "founder", "title": "Founder & CEO", "is_founder": true }],
+      "funding": [
+        { "round_type": "seed", "amount_usd": 1000000, "date": "2019-09", "investors": ["Techstars"], "lead_investor": "Techstars", "confidence": 0.5 }
+      ],
+      "products": [{ "name": "FarmCenta", "description": "Commodity marketplace and trade finance for farmers.", "category": "agritech", "url": "https://agrocenta.com" }],
+      "competitors": [{ "name": "Farmerline", "competition_type": "direct" }, { "name": "Esoko", "competition_type": "direct" }],
+      "sources": [{ "url": "https://agrocenta.com", "title": "AgroCenta corporate site", "publisher": "AgroCenta", "source_type": "corporate", "reliability": 0.75 }]
+    },
+    {
+      "name": "TROTRO Tractor", "org_type": "startup", "description": "Ghanaian agritech marketplace for tractor and machinery rental, digitising farm mechanisation access for smallholders.",
+      "founded_year": 2017, "hq_city": "Accra", "website": "https://trotrotractor.com", "employee_count": 40,
+      "funding_status": "funded", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Agritech", "Logistics & Mobility"],
+      "technologies": [],
+      "products": [{ "name": "TROTRO Platform", "description": "Tractor rental marketplace connecting farmers to machine owners.", "category": "agritech", "url": "https://trotrotractor.com" }],
+      "competitors": [{ "name": "Farmerline", "competition_type": "indirect" }],
+      "sources": [{ "url": "https://trotrotractor.com", "title": "TROTRO Tractor corporate site", "publisher": "TROTRO Tractor", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "Complete Farmer", "org_type": "startup", "description": "Ghanaian agritech marketplace matching farmers to buyers and providing smart farming tools and financing.",
+      "founded_year": 2017, "hq_city": "Accra", "website": "https://completefarmer.com", "employee_count": 60,
+      "funding_status": "funded", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Agritech", "Enterprise SaaS"],
+      "technologies": [{ "name": "GIS & Remote Sensing", "adoption": "adopting" }],
+      "funding": [
+        { "round_type": "seed", "amount_usd": 1100000, "date": "2022-04", "investors": ["Big Brain Holdings"], "lead_investor": "Big Brain Holdings", "confidence": 0.5 }
+      ],
+      "products": [{ "name": "Complete Farmer Platform", "description": "Farm-to-buyer marketplace with smart farming tools.", "category": "agritech", "url": "https://completefarmer.com" }],
+      "competitors": [{ "name": "Farmerline", "competition_type": "direct" }, { "name": "AgroCenta", "competition_type": "direct" }],
+      "sources": [{ "url": "https://completefarmer.com", "title": "Complete Farmer corporate site", "publisher": "Complete Farmer", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "MeQasa", "org_type": "startup", "description": "Ghana's leading real estate portal for listings, agents and property services. Recently expanded into brokerage and property management tech.",
+      "founded_year": 2013, "hq_city": "Accra", "website": "https://meqasa.com", "employee_count": 45,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.8, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Proptech", "E-commerce & Retail"],
+      "technologies": [],
+      "products": [{ "name": "MeQasa Portal", "description": "Property listings and agent marketplace.", "category": "proptech", "url": "https://meqasa.com" }],
+      "competitors": [{ "name": "Rehabit", "competition_type": "direct" }],
+      "sources": [{ "url": "https://meqasa.com", "title": "MeQasa corporate site", "publisher": "MeQasa", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "Rehabit", "org_type": "startup", "description": "Ghanaian real estate technology company modernising property management, brokerage and construction finance.",
+      "founded_year": 2018, "hq_city": "Accra", "website": "https://rehabit.com", "employee_count": 25,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.6, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Proptech"],
+      "technologies": [],
+      "products": [{ "name": "Rehabit Platform", "description": "Property management and brokerage platform.", "category": "proptech", "url": "https://rehabit.com" }],
+      "competitors": [{ "name": "MeQasa", "competition_type": "direct" }],
+      "sources": [{ "url": "https://rehabit.com", "title": "Rehabit corporate site", "publisher": "Rehabit", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "Swoove", "org_type": "startup", "description": "Ghanaian B2B delivery platform providing on-demand logistics to e-commerce, FMCG and fintech clients.",
+      "founded_year": 2018, "hq_city": "Accra", "website": "https://swoove.com", "employee_count": 70,
+      "funding_status": "funded", "status": "active", "verification_status": "reported", "confidence": 0.65, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Logistics & Mobility", "E-commerce & Retail"],
+      "technologies": [{ "name": "IoT Sensors", "adoption": "exploring" }],
+      "products": [{ "name": "Swoove Delivery", "description": "On-demand B2B delivery network.", "category": "logistics", "url": "https://swoove.com" }],
+      "competitors": [{ "name": "Hubtel", "competition_type": "indirect" }],
+      "sources": [{ "url": "https://swoove.com", "title": "Swoove corporate site", "publisher": "Swoove", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "Kofa", "org_type": "startup", "description": "Ghanaian energy startup building a battery swap network and affordable home energy appliances, starting with Accra's community networks.",
+      "founded_year": 2021, "hq_city": "Accra", "website": "https://kofa.co", "employee_count": 40,
+      "funding_status": "funded", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Energy & Utilities", "IoT & Hardware"],
+      "technologies": [{ "name": "Smart Metering", "adoption": "adopting" }, { "name": "IoT Sensors", "adoption": "adopting" }],
+      "products": [{ "name": "Kofa Battery Swap", "description": "Swappable battery network for households and SMEs.", "category": "energy", "url": "https://kofa.co" }, { "name": "Jua Tap", "description": "Pay-as-you-go home battery appliance.", "category": "energy" }],
+      "sources": [{ "url": "https://kofa.co", "title": "Kofa corporate site", "publisher": "Kofa", "source_type": "corporate", "reliability": 0.75 }]
+    },
+    {
+      "name": "Zipline", "org_type": "corporation", "description": "US drone-delivery company operating Africa's largest medical drone network from Ghana, delivering blood and medical supplies to health facilities nationwide.",
+      "founded_year": 2014, "hq_city": "Accra", "website": "https://www.flyzipline.com", "employee_count": 500,
+      "funding_status": "funded", "status": "active", "verification_status": "verified", "confidence": 0.9, "monitor_frequency": "weekly",
+      "sectors": ["Healthtech", "Logistics & Mobility", "GovTech / E-government"],
+      "technologies": [{ "name": "Drone Delivery", "adoption": "leading" }, { "name": "GIS & Remote Sensing", "adoption": "adopting" }],
+      "products": [{ "name": "Zipline Delivery Network", "description": "Medical drone delivery across Ghana.", "category": "logistics", "url": "https://www.flyzipline.com" }],
+      "sources": [{ "url": "https://www.flyzipline.com", "title": "Zipline corporate site", "publisher": "Zipline", "source_type": "corporate", "reliability": 0.85 }]
+    },
+    {
+      "name": "Ghana Post GPS", "org_type": "government", "description": "Ghana's digital property addressing system (GhanaPostGPS) developed by Ghana Post, providing unique digital addresses for every location in Ghana.",
+      "founded_year": 2017, "hq_city": "Accra", "website": "https://www.ghanapostgps.com", "employee_count": 150,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.85, "monitor_frequency": "monthly",
+      "sectors": ["GovTech / E-government", "Digital Banking"],
+      "technologies": [{ "name": "GIS & Remote Sensing", "adoption": "leading" }, { "name": "Digital Identity", "adoption": "adopting" }],
+      "products": [{ "name": "GhanaPostGPS", "description": "National digital addressing system.", "category": "govtech", "url": "https://www.ghanapostgps.com" }],
+      "sources": [{ "url": "https://www.ghanapostgps.com", "title": "Ghana Post GPS site", "publisher": "Ghana Post", "source_type": "government", "reliability": 0.8 }]
+    },
+    {
+      "name": "Code for Ghana", "org_type": "ngo", "description": "Civic technology organisation building open data tools and digital public services for Ghanaian civil society and government accountability.",
+      "founded_year": 2016, "hq_city": "Accra", "website": "https://codeforghana.org", "employee_count": 15,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "monthly",
+      "sectors": ["GovTech / E-government", "AI & Data"],
+      "technologies": [{ "name": "Open Banking APIs", "adoption": "exploring" }],
+      "products": [{ "name": "Ghana Open Data", "description": "Open data portals for civic accountability.", "category": "civic tech", "url": "https://codeforghana.org" }],
+      "sources": [{ "url": "https://codeforghana.org", "title": "Code for Ghana site", "publisher": "Code for Ghana", "source_type": "ngo", "reliability": 0.75 }]
+    },
+    {
+      "name": "Rancard", "org_type": "startup", "description": "Ghanaian enterprise mobile engagement company serving banks, telecoms and FMCGs across Africa with USSD and app engagement platforms.",
+      "founded_year": 2002, "hq_city": "Accra", "website": "https://rancard.com", "employee_count": 120,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "monthly",
+      "sectors": ["Enterprise SaaS", "Telecommunications"],
+      "technologies": [{ "name": "USSD", "adoption": "leading" }, { "name": "Conversational AI", "adoption": "exploring" }],
+      "products": [{ "name": "Rancard Engagement", "description": "USSD and app engagement platform for enterprises.", "category": "enterprise SaaS", "url": "https://rancard.com" }],
+      "sources": [{ "url": "https://rancard.com", "title": "Rancard corporate site", "publisher": "Rancard", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "Asoriba", "org_type": "startup", "description": "Ghanaian church and community management SaaS with payment collection, member databases and engagement tools across Africa.",
+      "founded_year": 2015, "hq_city": "Kumasi", "website": "https://asoriba.com", "employee_count": 25,
+      "funding_status": "funded", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "weekly", "is_seed": 1,
+      "sectors": ["Enterprise SaaS", "Fintech"],
+      "technologies": [{ "name": "Mobile Money APIs", "adoption": "adopting" }],
+      "products": [{ "name": "Asoriba Platform", "description": "Church management and giving platform.", "category": "vertical SaaS", "url": "https://asoriba.com" }],
+      "sources": [{ "url": "https://asoriba.com", "title": "Asoriba corporate site", "publisher": "Asoriba", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "GhanaPay", "org_type": "startup", "description": "Domestic card scheme and instant payment rails operated by the Ghana Interbank Payment and Settlement Systems (GhIPSS), enabling local debit cards and QR payments.",
+      "founded_year": 2021, "hq_city": "Accra", "website": "https://www.ghipss.net", "employee_count": 30,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.85, "monitor_frequency": "monthly",
+      "sectors": ["Payments", "Fintech"],
+      "technologies": [{ "name": "Open Banking APIs", "adoption": "adopting" }, { "name": "Mobile Money APIs", "adoption": "adopting" }],
+      "products": [{ "name": "GhanaPay App", "description": "National QR payment app.", "category": "payments", "url": "https://www.ghipss.net" }],
+      "sources": [{ "url": "https://www.ghipss.net", "title": "GhIPSS site", "publisher": "GhIPSS", "source_type": "government", "reliability": 0.85 }]
+    },
+    {
+      "name": "KGL Technology", "org_type": "corporation", "description": "Ghanaian technology company providing payment infrastructure, lottery systems and financial services processing.",
+      "founded_year": 2004, "hq_city": "Accra", "website": "https://www.kgl.com.gh", "employee_count": 300,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.65, "monitor_frequency": "monthly",
+      "sectors": ["Payments", "Enterprise SaaS"],
+      "technologies": [{ "name": "Machine Learning", "adoption": "exploring" }],
+      "products": [{ "name": "KGL Payments", "description": "Payment processing infrastructure.", "category": "payments", "url": "https://www.kgl.com.gh" }],
+      "sources": [{ "url": "https://www.kgl.com.gh", "title": "KGL corporate site", "publisher": "KGL", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "BusyInternet", "org_type": "corporation", "description": "Ghanaian internet service provider and technology hub pioneer, operating B2B connectivity, cloud and managed services.",
+      "founded_year": 2001, "hq_city": "Accra", "website": "https://www.busyinternet.com", "employee_count": 150,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.6, "monitor_frequency": "monthly",
+      "sectors": ["Telecommunications", "Enterprise SaaS"],
+      "technologies": [{ "name": "Cloud Computing", "adoption": "adopting" }],
+      "sources": [{ "url": "https://www.busyinternet.com", "title": "BusyInternet corporate site", "publisher": "BusyInternet", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "ACT Technologies", "org_type": "corporation", "description": "Ghanaian IT services and solutions company providing software, infrastructure and managed services to enterprises and government.",
+      "founded_year": 2000, "hq_city": "Accra", "website": "https://www.actghana.com", "employee_count": 200,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.6, "monitor_frequency": "monthly",
+      "sectors": ["Enterprise SaaS", "GovTech / E-government"],
+      "technologies": [{ "name": "Cloud Computing", "adoption": "adopting" }],
+      "sources": [{ "url": "https://www.actghana.com", "title": "ACT Technologies site", "publisher": "ACT Technologies", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "BIMA Ghana", "org_type": "corporation", "description": "Mobile insurance and health services provider operating in Ghana, distributing microinsurance via mobile networks.",
+      "founded_year": 2010, "hq_city": "Accra", "website": "https://www.bimamobile.com", "employee_count": 200,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "monthly",
+      "sectors": ["Insurtech", "Healthtech", "Mobile Money"],
+      "technologies": [{ "name": "USSD", "adoption": "leading" }, { "name": "Mobile Money APIs", "adoption": "adopting" }],
+      "products": [{ "name": "BIMA Mobile Insurance", "description": "Microinsurance distributed via mobile.", "category": "insurtech", "url": "https://www.bimamobile.com" }],
+      "sources": [{ "url": "https://www.bimamobile.com", "title": "BIMA corporate site", "publisher": "BIMA", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "MicroEnsure", "org_type": "corporation", "description": "Microinsurance specialist providing technology and distribution for mass-market insurance across Africa and Asia, with Ghana operations.",
+      "founded_year": 2002, "hq_city": "Accra", "website": "https://www.microensure.com", "employee_count": 100,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "monthly",
+      "sectors": ["Insurtech", "Fintech"],
+      "people": [{ "name": "Richard Leftley", "role": "founder", "title": "CEO", "is_founder": false }],
+      "products": [{ "name": "MicroEnsure APIs", "description": "Microinsurance distribution technology.", "category": "insurtech", "url": "https://www.microensure.com" }],
+      "sources": [{ "url": "https://www.microensure.com", "title": "MicroEnsure corporate site", "publisher": "MicroEnsure", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "MEST", "org_type": "university", "description": "Meltwater Entrepreneurial School of Technology — pan-African tech training program and incubator based in Accra, producing software entrepreneurs and funded startups.",
+      "founded_year": 2008, "hq_city": "Accra", "website": "https://mestafrica.org", "employee_count": 60,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.85, "monitor_frequency": "monthly",
+      "sectors": ["Edtech", "Developer Tools & DevOps"],
+      "people": [{ "name": "Ashwin Ravichandran", "role": "founder", "title": "Managing Director", "is_founder": false }],
+      "products": [{ "name": "MEST Program", "description": "Entrepreneurial training and incubation.", "category": "education", "url": "https://mestafrica.org" }],
+      "sources": [{ "url": "https://mestafrica.org", "title": "MEST site", "publisher": "MEST", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "AmaliTech", "org_type": "startup", "description": "Ghanaian social enterprise training and employing software developers, with a delivery hub in Takoradi serving global clients.",
+      "founded_year": 2019, "hq_city": "Takoradi", "website": "https://amalitech.org", "employee_count": 300,
+      "funding_status": "funded", "status": "active", "verification_status": "reported", "confidence": 0.75, "monitor_frequency": "weekly",
+      "sectors": ["Edtech", "Enterprise SaaS"],
+      "technologies": [{ "name": "Cloud Computing", "adoption": "adopting" }, { "name": "GenAI", "adoption": "adopting" }],
+      "products": [{ "name": "AmaliTech Academy", "description": "Software developer training and talent outsourcing.", "category": "talent", "url": "https://amalitech.org" }],
+      "sources": [{ "url": "https://amalitech.org", "title": "AmaliTech site", "publisher": "AmaliTech", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "iSpace Foundation", "org_type": "community", "description": "Ghana's leading innovation hub and co-working community in Accra, supporting startups, tech education and community events.",
+      "founded_year": 2014, "hq_city": "Accra", "website": "https://ispace.com.gh", "employee_count": 25,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.8, "monitor_frequency": "monthly",
+      "sectors": ["Developer Tools & DevOps", "Edtech"],
+      "people": [{ "name": "Josiah Eyison", "role": "founder", "title": "Founder & CEO", "is_founder": true }],
+      "sources": [{ "url": "https://ispace.com.gh", "title": "iSpace site", "publisher": "iSpace", "source_type": "corporate", "reliability": 0.8 }]
+    },
+    {
+      "name": "Impact Hub Accra", "org_type": "community", "description": "Member of the global Impact Hub network, providing co-working, incubation and community for social entrepreneurs in Accra.",
+      "founded_year": 2013, "hq_city": "Accra", "website": "https://accra.impacthub.net", "employee_count": 20,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "monthly",
+      "sectors": ["Developer Tools & DevOps"],
+      "sources": [{ "url": "https://accra.impacthub.net", "title": "Impact Hub Accra site", "publisher": "Impact Hub", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "Kumasi Hive", "org_type": "community", "description": "Maker space and innovation hub in Kumasi driving hardware, software and entrepreneurship in the Ashanti region.",
+      "founded_year": 2015, "hq_city": "Kumasi", "website": "https://kumasihive.com", "employee_count": 15,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "monthly",
+      "sectors": ["IoT & Hardware", "Developer Tools & DevOps"],
+      "technologies": [{ "name": "IoT Sensors", "adoption": "adopting" }],
+      "sources": [{ "url": "https://kumasihive.com", "title": "Kumasi Hive site", "publisher": "Kumasi Hive", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "Ho Node", "org_type": "community", "description": "Tech hub and community in Ho, Volta Region, supporting regional developers, startups and digital skills.",
+      "founded_year": 2017, "hq_city": "Ho", "website": "https://honode.org", "employee_count": 10,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.6, "monitor_frequency": "monthly",
+      "sectors": ["Developer Tools & DevOps"],
+      "sources": [{ "url": "https://honode.org", "title": "Ho Node site", "publisher": "Ho Node", "source_type": "corporate", "reliability": 0.65 }]
+    },
+    {
+      "name": "Ghana Tech Lab", "org_type": "government", "description": "Government-backed technology hub and training centre fostering digital skills and innovation ecosystems across Ghana.",
+      "founded_year": 2019, "hq_city": "Accra", "website": "https://ghanatechlab.gov.gh", "employee_count": 30,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.7, "monitor_frequency": "monthly",
+      "sectors": ["GovTech / E-government", "Edtech"],
+      "technologies": [{ "name": "GenAI", "adoption": "adopting" }],
+      "sources": [{ "url": "https://ghanatechlab.gov.gh", "title": "Ghana Tech Lab site", "publisher": "Government of Ghana", "source_type": "government", "reliability": 0.7 }]
+    },
+    {
+      "name": "Equinox VC", "org_type": "venture_fund", "description": "Ghana-based venture capital firm backing early-stage Ghanaian and West African technology startups.",
+      "founded_year": 2019, "hq_city": "Accra", "website": "https://equinoxvc.com", "employee_count": 10,
+      "funding_status": "operating", "status": "active", "verification_status": "reported", "confidence": 0.65, "monitor_frequency": "monthly",
+      "sectors": ["Fintech", "Developer Tools & DevOps"],
+      "sources": [{ "url": "https://equinoxvc.com", "title": "Equinox VC site", "publisher": "Equinox VC", "source_type": "corporate", "reliability": 0.7 }]
+    },
+    {
+      "name": "GhanaWeb", "org_type": "media", "description": "One of Ghana's most-visited digital media platforms, covering news, business and technology, with an online payments arm.",
+      "founded_year": 1999, "hq_city": "Accra", "website": "https://www.ghanaweb.com", "employee_count": 100,
+      "funding_status": "operating", "status": "active", "verification_status": "verified", "confidence": 0.85, "monitor_frequency": "monthly",
+      "sectors": ["Media & Content"],
+      "sources": [{ "url": "https://www.ghanaweb.com", "title": "GhanaWeb site", "publisher": "GhanaWeb", "source_type": "media", "reliability": 0.7 }]
+    }
+  ]
+}

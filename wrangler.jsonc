@@ -1,0 +1,30 @@
+// GTPM — Ghana Technology & Power Map
+// Cloudflare Worker: Hono API + static assets + D1 database
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gtpm",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-11",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "none"
+  },
+  "routes": [
+    { "pattern": "gtpm.gabochie.com", "custom_domain": true }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gtpm-db",
+      "database_id": "ee684bd7-e47f-48b4-8e0f-f6293ef3f2cb",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "logpush": false
+}

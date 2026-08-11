@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GTPM — Ghana Technology &amp; Power Map</title>
+  <meta name="description" content="Continuously updated intelligence on the organisations, founders, products, technologies, capital and market movements shaping Ghana's digital economy."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%231db880' d='M12 2l2.4 6.2L21 9.2l-5 4.4 1.5 6.4L12 16.6 6.5 20l1.5-6.4-5-4.4 6.6-1L12 2z'/></svg>"/>
+  <link rel="stylesheet" href="assets/css/gtpm.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/ui.js"></script>
+  <script defer src="assets/js/layout.js"></script>
+  <script defer src="assets/js/home.js"></script>
+</head>
+<body>
+<main class="wrap">
+
+  <section class="hero">
+    <div class="hero-kicker">Continuous Technology Intelligence</div>
+    <h1>The map of <em>Ghana's</em> digital economy.</h1>
+    <p class="hero-sub">
+      GTPM continuously monitors the organisations, founders, products, technologies, capital and regulations
+      shaping Ghana's technology ecosystem — then tells you who matters, what they're doing, what changed, and what to do next.
+    </p>
+    <div class="hero-meta">
+      <span id="hero-updated">▲ Updating…</span>
+      <span id="hero-orgs">—</span>
+      <span>★ Provenance-backed data</span>
+    </div>
+  </section>
+
+  <section class="stat-row" id="stats-row"></section>
+
+  <section>
+    <div class="sec-head">
+      <div>
+        <span class="sec-kicker">Sector Landscape</span>
+        <h2>Where Ghana builds</h2>
+      </div>
+      <a class="sec-link" href="sectors.html">All sectors →</a>
+    </div>
+    <div class="grid grid-4" id="sector-grid"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div>
+        <span class="sec-kicker">Technology Power Map</span>
+        <h2>The geography of technology</h2>
+      </div>
+      <a class="sec-link" href="map.html">Open the map →</a>
+    </div>
+    <div class="map-shell">
+      <div id="home-map" style="height:420px"></div>
+      <div class="map-legend" style="top:14px;right:14px">
+        <div class="lg-row"><span class="dot" style="background:var(--green)"></span> Org HQ</div>
+        <div class="lg-row"><span class="dot" style="background:var(--gold)"></span> Hub / university</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div>
+        <span class="sec-kicker">Competitive Signals</span>
+        <h2>What changed</h2>
+      </div>
+      <a class="sec-link" href="signals.html">All signals →</a>
+    </div>
+    <div id="signals-feed"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div>
+        <span class="sec-kicker">Who matters</span>
+        <h2>Leading organisations</h2>
+      </div>
+      <a class="sec-link" href="companies.html">All companies →</a>
+    </div>
+    <div class="grid grid-3" id="org-grid"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div>
+        <span class="sec-kicker">Opportunity Radar</span>
+        <h2>Where the market is going</h2>
+      </div>
+      <a class="sec-link" href="opportunities.html">All opportunities →</a>
+    </div>
+    <div class="grid grid-3" id="opp-grid"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div>
+        <span class="sec-kicker">Technology Radar</span>
+        <h2>Technologies to watch</h2>
+      </div>
+      <a class="sec-link" href="technologies.html">Full radar →</a>
+    </div>
+    <div class="radar" id="radar-mini"></div>
+  </section>
+
+</main>
+</body>
+</html>

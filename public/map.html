@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Power Map — GTPM</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%231db880' d='M12 2l2.4 6.2L21 9.2l-5 4.4 1.5 6.4L12 16.6 6.5 20l1.5-6.4-5-4.4 6.6-1L12 2z'/></svg>"/>
+  <link rel="stylesheet" href="assets/css/gtpm.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/ui.js"></script>
+  <script defer src="assets/js/layout.js"></script>
+  <script defer src="assets/js/map.js"></script>
+</head>
+<body>
+<main class="wrap">
+  <section class="hero" style="padding:32px 0 24px">
+    <div class="hero-kicker">Technology Power Map</div>
+    <h1 style="font-size:38px">The geography of Ghana's technology economy</h1>
+    <p class="hero-sub" style="font-size:15px">Where organisations, hubs, universities and capital concentrate — and where the next cluster forms.</p>
+  </section>
+  <div class="filters">
+    <div><label>Sector</label></div>
+    <select id="f-sector"><option value="">All sectors</option></select>
+    <div><label>Type</label></div>
+    <select id="f-type">
+      <option value="">All types</option>
+      <option value="startup">Startups &amp; scaleups</option>
+      <option value="corporation">Corporations</option>
+      <option value="bank">Banks</option>
+      <option value="telecom">Telecoms</option>
+      <option value="university">Universities</option>
+      <option value="research">Research</option>
+      <option value="government">Government</option>
+      <option value="accelerator">Accelerators</option>
+      <option value="incubator">Incubators</option>
+      <option value="venture_fund">Venture funds</option>
+      <option value="ngo">NGOs</option>
+      <option value="regulator">Regulators</option>
+    </select>
+  </div>
+  <div class="map-shell">
+    <div id="power-map"></div>
+    <div class="map-legend" style="top:14px;right:14px">
+      <div class="lg-row"><span class="dot" style="background:var(--green)"></span> Org HQ · radius = density</div>
+      <div class="lg-row"><span class="dot" style="background:var(--gold)"></span> Hub / university</div>
+      <div class="lg-row"><span class="dot" style="background:var(--red)"></span> 2+ critical players</div>
+    </div>
+  </div>
+  <section style="margin-top:36px">
+    <div class="sec-head"><div><span class="sec-kicker">Concentration</span><h2>Clusters by city</h2></div></div>
+    <div class="table-wrap"><table class="data" id="cluster-table"></table></div>
+  </section>
+</main>
+</body>
+</html>

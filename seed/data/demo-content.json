@@ -1,0 +1,176 @@
+{
+  "_comment": "Demo intelligence content. Events/signals/news are real public facts with confidence marked. Opportunities are AI-generated hypotheses (verification_status ai_hypothesis) per spec §8 Agent 9. Regulations are real Ghana statutes.",
+  "events": [
+    { "org": "MTN Ghana", "event_type": "product", "title": "MTN MoMo interoperability with banks", "description": "Mobile money interoperability connecting MoMo wallets with bank accounts via GhIPSS instant pay.", "date": "2018-05", "date_precision": "month", "importance": "critical" },
+    { "org": "Zeepay", "event_type": "expansion", "title": "Zeepay expands remittance infrastructure across Africa and Caribbean", "description": "Zeepay grew its mobile-money remittance settlement into multiple African and Caribbean markets.", "date": "2022-01", "date_precision": "year", "importance": "important" },
+    { "org": "Bank of Ghana", "event_type": "regulatory", "title": "Bank of Ghana e-cedi pilot", "description": "The central bank launched a pilot of its e-cedi digital currency, testing offline functionality and financial-inclusion use cases.", "date": "2024-05", "date_precision": "month", "importance": "critical" },
+    { "org": "Telecel Ghana", "event_type": "acquisition", "title": "Telecel acquires Vodafone Ghana", "description": "Telecel Group completed acquisition of Vodafone Ghana's operations, rebranding the operator.", "date": "2024-02", "date_precision": "month", "importance": "critical" },
+    { "org": "mPharma", "event_type": "expansion", "title": "mPharma expands pharmacy retail network", "description": "mPharma scaled its drug-store retail network across Ghana and other African markets.", "date": "2023-01", "date_precision": "year", "importance": "important" },
+    { "org": "Ghana Web", "event_type": "product", "title": "GhanaWeb remains leading Ghanaian digital media property", "description": "GhanaWeb continues to be among the most-visited Ghanaian websites.", "date": "2024-01", "date_precision": "year", "importance": "signal" }
+  ],
+  "signals": [
+    { "org": "MTN Ghana", "signal_type": "tech_adoption", "title": "MTN Ghana deepens AI and fintech investment", "description": "MTN Group-wide fintech and AI strategy is reflected in MoMo product expansion in Ghana.", "importance": "important", "date": "2025-01-15", "strategic_interpretation": "The largest distribution network in Ghana's digital economy continues to compound fintech advantage; competitors must differentiate on service, not reach." },
+    { "org": "Bank of Ghana", "signal_type": "regulatory", "title": "Central bank digital currency pilot progresses", "description": "e-cedi pilot continues, signalling direction of travel for digital payments regulation.", "importance": "critical", "date": "2024-08-01", "strategic_interpretation": "A state-backed digital currency would reshape the payments layer every Ghanaian fintech builds on." },
+    { "org": "Hubtel", "signal_type": "market_position", "title": "Hubtel maintains entrenched merchant distribution", "description": "Hubtel remains the incumbent merchant payments and messaging platform in Ghana.", "importance": "important", "date": "2024-06-10", "strategic_interpretation": "Incumbent distribution is Hubtel's core moat; new entrants must attack underserved segments rather than head-on." },
+    { "org": "Zeepay", "signal_type": "expansion", "title": "Zeepay strengthens cross-border remittance rails", "description": "Continued international remittance partnerships expand Zeepay's footprint beyond Ghana.", "importance": "important", "date": "2023-11-20", "strategic_interpretation": "Cross-border rails are a defensible niche where Ghanaian fintechs can own corridors." },
+    { "org": "mPharma", "signal_type": "funding", "title": "mPharma among Africa's most funded healthtechs", "description": "mPharma's cumulative venture funding makes it a leading African healthtech with Accra roots.", "importance": "important", "date": "2023-03-01", "strategic_interpretation": "Pharmaceutical supply-chain data is a strategic asset; healthtech consolidation will centre on distribution data." },
+    { "org": "Farmerline", "signal_type": "expansion", "title": "Farmerline scales Mergdata across agribusinesses", "description": "Farmerline's farm-data platform continues to onboard agribusiness clients across Africa.", "importance": "important", "date": "2023-09-01", "strategic_interpretation": "Farm-level data captured by Mergdata is foundational for agri-finance and insurance products." }
+  ],
+  "opportunities": [
+    {
+      "title": "AI-native construction cost database for Ghana",
+      "problem": "No transparent, continuously updated source of construction costs for Ghana exists; estimators rely on manual rate books and anecdote.",
+      "market": "Construction cost intelligence for Ghana's AEC industry: contractors, quantity surveyors, developers, banks and government.",
+      "sector": "Construction Cost Intelligence",
+      "existing_alternatives": ["Manual rate books", "International cost databases with weak Ghana coverage", "Ad-hoc historical project data"],
+      "current_competitors": [],
+      "why_now": "Falling AI costs make dynamic cost estimation feasible; Ghana's construction sector lacks data infrastructure.",
+      "technology_required": ["LLMs", "Data Infrastructure", "BIM"],
+      "barriers": ["Data acquisition", "Industry trust", "Currency volatility"],
+      "potential_customers": "Quantity surveying firms, contractors, developers, project financiers",
+      "business_model": "SaaS subscription + per-estimate pricing",
+      "attractiveness": 0.78,
+      "classification": "BUILD_NOW",
+      "evidence": [],
+      "confidence": 0.5
+    },
+    {
+      "title": "API aggregation layer for Ghanaian financial services",
+      "problem": "Fintechs must integrate bank, mobile-money and payments APIs individually; a unified abstraction layer is missing.",
+      "market": "Ghana fintechs, banks, and international companies expanding into Ghana.",
+      "sector": "APIs / Infrastructure",
+      "existing_alternatives": ["Direct bank integrations", "Pan-African aggregators with thin Ghana coverage"],
+      "current_competitors": [],
+      "why_now": "Open-banking direction from the regulator and rising fintech density create demand.",
+      "technology_required": ["Fintech APIs", "Open Banking", "Cloud Native"],
+      "barriers": ["Bank partnerships", "Licensing", "Regulatory approval"],
+      "potential_customers": "Fintech developers, banks, corporates",
+      "business_model": "Per-API-call pricing",
+      "attractiveness": 0.74,
+      "classification": "EARLY_BET",
+      "evidence": [],
+      "confidence": 0.45
+    },
+    {
+      "title": "Farm-level data layer for agri-finance",
+      "problem": "Banks and insurers cannot underwrite smallholder agriculture because farm-level data is fragmented.",
+      "market": "Agricultural lending, crop insurance and input credit in Ghana.",
+      "sector": "Agritech",
+      "existing_alternatives": ["Farmerline Mergdata", "Esoko profiling", "Manual field verification"],
+      "current_competitors": ["Farmerline", "Esoko"],
+      "why_now": "Mobile money distribution + satellite data make farm-level scoring newly viable.",
+      "technology_required": ["Geospatial AI", "AI Agents", "Mobile Money"],
+      "barriers": ["Data quality", "Farmer coverage", "Underwriting model validation"],
+      "potential_customers": "Banks, microfinance institutions, insurers",
+      "business_model": "Data licensing + credit-scoring fees",
+      "attractiveness": 0.7,
+      "classification": "WATCH",
+      "evidence": [],
+      "confidence": 0.4
+    },
+    {
+      "title": "AI workflows for Ghanaian AEC firms (BIM-to-cost)",
+      "problem": "Ghanaian AEC firms underuse BIM and have no automated path from design models to cost intelligence.",
+      "market": "Architects, engineers, quantity surveyors and contractors in Ghana.",
+      "sector": "AEC Technology",
+      "existing_alternatives": ["Manual quantity takeoff", "International BIM tools with local cost data gaps"],
+      "current_competitors": [],
+      "why_now": "AI can bridge design-to-estimate; local cost data is the differentiator.",
+      "technology_required": ["BIM", "Computer Vision", "LLMs", "Digital Twins"],
+      "barriers": ["BIM adoption rates", "Data standards", "Change management"],
+      "potential_customers": "AEC firms, developers, government projects",
+      "business_model": "SaaS + project fees",
+      "attractiveness": 0.72,
+      "classification": "EARLY_BET",
+      "evidence": [],
+      "confidence": 0.45
+    },
+    {
+      "title": "African-language voice interfaces for rural services",
+      "problem": "Digital services exclude users who are not literate in English; Twi and other Ghanaian languages lack production voice AI.",
+      "market": "Rural financial services, agriculture advisory, health information.",
+      "sector": "African-language Technology",
+      "existing_alternatives": ["IVR trees", "Human call centres", "English-only apps"],
+      "current_competitors": [],
+      "why_now": "Foundation-model speech technology is improving for low-resource languages; Ghana's languages are under-served.",
+      "technology_required": ["African-language AI", "Voice AI", "LLMs"],
+      "barriers": ["Data collection", "Model quality", "Device penetration"],
+      "potential_customers": "Mobile money operators, agritechs, government",
+      "business_model": "API licensing",
+      "attractiveness": 0.68,
+      "classification": "WHITE_SPACE",
+      "evidence": [],
+      "confidence": 0.35
+    },
+    {
+      "title": "Cybersecurity services for Ghanaian SMEs and fintechs",
+      "problem": "Digitalisation is outpacing security capacity; SMEs and fintechs lack affordable security operations.",
+      "market": "Ghanaian SMEs, fintechs, banks and public institutions.",
+      "sector": "Cybersecurity",
+      "existing_alternatives": ["International MSSPs", "In-house hires", "Compliance-only consultants"],
+      "current_competitors": [],
+      "why_now": "Cyber Security Act 2020 mandates protections; incident volume is rising with digitalisation.",
+      "technology_required": ["Cybersecurity", "AI Agents", "Cloud Native"],
+      "barriers": ["Talent scarcity", "Awareness", "Price sensitivity"],
+      "potential_customers": "Fintechs, banks, government agencies",
+      "business_model": "Managed security services + tooling",
+      "attractiveness": 0.66,
+      "classification": "WATCH",
+      "evidence": [],
+      "confidence": 0.4
+    }
+  ],
+  "regulations": [
+    { "title": "Payment Systems and Services Act 2019 (Act 987)", "agency": "Bank of Ghana", "body": "Regulates payment service providers, licensing of fintechs and oversight of payment systems in Ghana.", "sector_ids": ["Fintech", "Payments", "Banking Technology"], "status": "in_force", "published_date": "2019-01" },
+    { "title": "Data Protection Act 2012 (Act 843)", "agency": "Data Protection Commission", "body": "Ghana's data protection law, governing the processing of personal data.", "sector_ids": ["Data Infrastructure", "AI", "Cybersecurity"], "status": "in_force", "published_date": "2012-01" },
+    { "title": "Cyber Security Act 2020 (Act 1038)", "agency": "Cyber Security Authority", "body": "Establishes the Cyber Security Authority and obligations for critical information infrastructure and service providers.", "sector_ids": ["Cybersecurity", "Data Infrastructure"], "status": "in_force", "published_date": "2020-01" },
+    { "title": "Electronic Transactions Act 2008 (Act 772)", "agency": "Government of Ghana", "body": "Legal framework for electronic transactions, e-commerce and electronic communications.", "sector_ids": ["E-commerce", "Payments", "Fintech"], "status": "in_force", "published_date": "2008-01" },
+    { "title": "National Digital Economy Policy", "agency": "Ministry of Communications and Digitalisation", "body": "Policy framework for Ghana's digital transformation, digital identity, payments and digital skills.", "sector_ids": ["GovTech", "Digital Identity", "APIs / Infrastructure"], "status": "in_force", "published_date": "2020-01" }
+  ],
+  "news": [
+    { "title": "MTN Ghana launches 5G services", "url": "https://www.mtn.com.gh", "publisher": "MTN Ghana", "published_date": "2024-11-01", "summary": "MTN Ghana commercially launched 5G in Accra and Kumasi.", "org_ids": [], "sector_ids": ["Telecom"] },
+    { "title": "Bank of Ghana advances e-cedi pilot", "url": "https://www.bog.gov.gh", "publisher": "Bank of Ghana", "published_date": "2024-05-01", "summary": "The central bank expanded its digital currency pilot with offline-capable e-cedi trials.", "org_ids": [], "sector_ids": ["Payments", "Banking Technology"] }
+  ],
+  "reports": [
+    {
+      "title": "Ghana Technology Power Map — Market Overview",
+      "report_type": "sector",
+      "status": "published",
+      "generated_at": "2026-08-01",
+      "content": {
+        "executive_summary": "Ghana's technology economy is anchored by mobile money, fintech and telecom infrastructure, with emerging strength in agritech, healthtech and AI services. Accra concentrates most venture activity; Kumasi anchors agritech and engineering talent.",
+        "sections": ["Market map", "Key players", "Competitive landscape", "Funding", "Technology", "Opportunities"]
+      }
+    },
+    {
+      "title": "Ghana Fintech Landscape",
+      "report_type": "sector",
+      "status": "published",
+      "generated_at": "2026-07-15",
+      "content": {
+        "executive_summary": "Ghana's fintech market is mature by African standards, driven by mobile money ubiquity and a pragmatic regulator. Incumbents hold distribution; new value is being created in SME financial operations, cross-border rails and infrastructure layers.",
+        "sections": ["Market map", "Key players", "Funding", "Regulation", "Opportunities"]
+      }
+    },
+    {
+      "title": "Ghana ConTech Landscape",
+      "report_type": "sector",
+      "status": "published",
+      "generated_at": "2026-07-01",
+      "content": {
+        "executive_summary": "Construction technology in Ghana is early: BIM adoption is limited, cost data is fragmented, and few dedicated local players exist. This represents a genuine white space for cost intelligence and AI-enabled AEC workflows.",
+        "sections": ["Market map", "Key players", "Technology gaps", "Opportunities"]
+      }
+    },
+    {
+      "title": "Ghana AI Landscape",
+      "report_type": "sector",
+      "status": "published",
+      "generated_at": "2026-06-20",
+      "content": {
+        "executive_summary": "AI activity in Ghana is accelerating: data-services firms, university research and adoption inside large corporates. African-language AI and AI-for-agriculture are emerging niches with global relevance.",
+        "sections": ["Key players", "Research", "Adoption signals", "Opportunities"]
+      }
+    }
+  ]
+}

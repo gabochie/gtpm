@@ -1,0 +1,777 @@
+{
+  "_comment": "FALLBACK seed — authored by the build team from established public knowledge. Research-agent files (agent-*.json) supersede entries with the same name. Confidence values reflect this lower verification bar.",
+  "organizations": [
+    {
+      "name": "Hubtel",
+      "legal_name": "Hubtel Limited",
+      "org_type": "scaleup",
+      "description": "Ghana's largest payments and messaging platform, processing payments for merchants, banks and enterprises through POS, payment links and APIs.",
+      "overview": "Hubtel (formerly Softtribe) is one of Ghana's best-known technology companies, founded in 2005. It operates a full-stack payments and communications platform used by thousands of merchants and institutions across Ghana, and has expanded into other West African markets. It is a frequent reference point in the Ghanaian fintech ecosystem.",
+      "founded_year": 2005,
+      "hq_city": "Accra",
+      "website": "https://hubtel.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/hubtel", "twitter": "https://twitter.com/hubtel" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "growth",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["Fintech", "Payments", "Software / SaaS"],
+      "technologies": [{ "name": "Fintech APIs", "adoption": "adopted" }],
+      "products": [
+        { "name": "Hubtel Payments", "description": "Merchant payments platform: POS, payment links, in-app checkout and settlement.", "category": "platform", "url": "https://hubtel.com" },
+        { "name": "Hubtel Messaging", "description": "Bulk SMS, USSD and messaging APIs for enterprises.", "category": "api", "url": "https://hubtel.com" }
+      ],
+      "people": [{ "name": "Alexander Bram", "role": "founder", "title": "Founder & CEO", "is_founder": true }],
+      "funding": [],
+      "competitors": [
+        { "name": "Zeepay", "competition_type": "direct" },
+        { "name": "ExpressPay", "competition_type": "direct" },
+        { "name": "Paystack Ghana", "competition_type": "indirect" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://hubtel.com", "title": "Hubtel official website", "publisher": "Hubtel", "source_type": "official", "reliability": 0.95 },
+        { "url": "https://www.myjoyonline.com/tag/hubtel/", "title": "MyJoyOnline coverage of Hubtel", "publisher": "MyJoyOnline", "source_type": "news", "reliability": 0.75 }
+      ]
+    },
+    {
+      "name": "MTN Ghana",
+      "legal_name": "MTN Ghana Limited",
+      "org_type": "telecom",
+      "description": "Ghana's largest mobile network operator, providing voice, data, fibre and the MTN Mobile Money (MoMo) service.",
+      "overview": "MTN Ghana is the dominant mobile operator in Ghana, listed on the Ghana Stock Exchange. Its Mobile Money service is the country's largest fintech platform by users and transaction value, making MTN a pivotal player in Ghana's digital financial infrastructure. The company is a subsidiary of MTN Group.",
+      "founded_year": 1996,
+      "hq_city": "Accra",
+      "website": "https://www.mtn.com.gh",
+      "socials": { "linkedin": "https://www.linkedin.com/company/mtn-ghana", "twitter": "https://twitter.com/MTNGhana" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "public",
+      "status": "active",
+      "verification_status": "verified",
+      "confidence": 0.9,
+      "sectors": ["Telecom", "Payments", "Fintech"],
+      "technologies": [{ "name": "Mobile Money", "adoption": "advanced" }, { "name": "Cloud Native", "adoption": "adopted" }],
+      "products": [
+        { "name": "MTN MoMo", "description": "Mobile money wallet, payments, savings and remittance services.", "category": "platform", "url": "https://www.mtn.com.gh/momo" },
+        { "name": "MTN Mobile Broadband", "description": "4G/5G mobile and fixed broadband connectivity.", "category": "infrastructure", "url": "https://www.mtn.com.gh" }
+      ],
+      "people": [],
+      "funding": [],
+      "competitors": [
+        { "name": "Telecel Ghana", "competition_type": "direct" },
+        { "name": "AT Ghana", "competition_type": "direct" }
+      ],
+      "partnerships": [
+        { "org_b": "Bank of Ghana", "partnership_type": "bank_integration", "description": "MoMo interoperability with banks via GhIPSS" }
+      ],
+      "sources": [
+        { "url": "https://www.mtn.com.gh", "title": "MTN Ghana official website", "publisher": "MTN Ghana", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Zeepay",
+      "legal_name": "Zeepay Ghana Limited",
+      "org_type": "scaleup",
+      "description": "Fintech specialising in mobile money, remittance and digital payment infrastructure, with operations across Africa and the Caribbean.",
+      "overview": "Zeepay is a Ghanaian fintech focused on remittance and mobile-money-to-card/bank infrastructure. It partners with mobile money operators, banks and international money-transfer operators, and is one of Ghana's most internationally visible fintechs, holding licences in multiple jurisdictions.",
+      "founded_year": 2014,
+      "hq_city": "Accra",
+      "website": "https://www.zeepay.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/zeepaygh", "twitter": "https://twitter.com/zeepaygh" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "growth",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["Fintech", "Payments"],
+      "technologies": [{ "name": "Mobile Money", "adoption": "advanced" }, { "name": "Fintech APIs", "adoption": "adopted" }],
+      "products": [
+        { "name": "Zeepay Remittance", "description": "Mobile-money-enabled remittance settlement into Ghana and other markets.", "category": "platform", "url": "https://www.zeepay.com" }
+      ],
+      "people": [{ "name": "Andrew Takyi-Appiah", "role": "founder", "title": "Founder & Managing Director", "is_founder": true }],
+      "funding": [],
+      "competitors": [
+        { "name": "Hubtel", "competition_type": "direct" },
+        { "name": "ExpressPay", "competition_type": "direct" },
+        { "name": "Wave Mobile Money Ghana", "competition_type": "indirect" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://www.zeepay.com", "title": "Zeepay official website", "publisher": "Zeepay", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "ExpressPay",
+      "legal_name": "ExpressPay Ghana Limited",
+      "org_type": "scaleup",
+      "description": "Ghanaian digital payments company offering online and mobile payment solutions for merchants, utilities and government services.",
+      "overview": "ExpressPay is one of Ghana's established digital payment companies, providing payment processing for utilities, insurance, education and government services. It is widely used for bill payments and school fees across Ghana.",
+      "founded_year": 2013,
+      "hq_city": "Accra",
+      "website": "https://expresspaygh.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/expresspay-ghana", "twitter": "https://twitter.com/expresspaygh" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "growth",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["Fintech", "Payments"],
+      "technologies": [{ "name": "Fintech APIs", "adoption": "adopted" }],
+      "products": [
+        { "name": "ExpressPay Payments", "description": "Bill payments, merchant checkout and money transfer.", "category": "platform", "url": "https://expresspaygh.com" }
+      ],
+      "people": [{ "name": "Takyi Appiah", "role": "founder", "title": "Co-founder & CEO", "is_founder": true }],
+      "funding": [],
+      "competitors": [
+        { "name": "Hubtel", "competition_type": "direct" },
+        { "name": "Zeepay", "competition_type": "indirect" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://expresspaygh.com", "title": "ExpressPay official website", "publisher": "ExpressPay", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Float",
+      "legal_name": "Float Money Limited",
+      "org_type": "startup",
+      "description": "Fintech providing financial operations software — corporate cards, spend management and payments — for African businesses.",
+      "overview": "Float builds the financial operating system for SMEs in Ghana and Nigeria, offering corporate cards, bill payments and spend management. It is one of the higher-profile venture-backed fintechs founded by young Ghanaian entrepreneurs.",
+      "founded_year": 2020,
+      "hq_city": "Accra",
+      "website": "https://floatmoney.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/float-money", "twitter": "https://twitter.com/float_money" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "series_a",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.75,
+      "sectors": ["Fintech", "Payments", "Software / SaaS"],
+      "technologies": [{ "name": "Fintech APIs", "adoption": "adopted" }],
+      "products": [
+        { "name": "Float Cards", "description": "Corporate cards and spend management for SMEs.", "category": "platform", "url": "https://floatmoney.com" }
+      ],
+      "people": [{ "name": "Jesse Ghansah", "role": "founder", "title": "Co-founder & CEO", "is_founder": true }],
+      "funding": [],
+      "competitors": [
+        { "name": "Hubtel", "competition_type": "indirect" },
+        { "name": "Paystack Ghana", "competition_type": "indirect" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://floatmoney.com", "title": "Float official website", "publisher": "Float", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Farmerline",
+      "legal_name": "Farmerline Limited",
+      "org_type": "scaleup",
+      "description": "Agritech providing farm data, advisory and supply-chain software to smallholder farmers and agricultural companies.",
+      "overview": "Farmerline is a leading Ghanaian agritech founded in Kumasi, best known for Mergdata, a service that helps agribusinesses manage farmer data, field operations and supply chains. It has served hundreds of thousands of farmers and works with major agricultural buyers and NGOs.",
+      "founded_year": 2013,
+      "hq_city": "Kumasi",
+      "website": "https://farmerline.co",
+      "socials": { "linkedin": "https://www.linkedin.com/company/farmerline", "twitter": "https://twitter.com/farmerline" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "series_a",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["Agritech", "Software / SaaS"],
+      "technologies": [{ "name": "Voice AI", "adoption": "adopted" }, { "name": "IoT", "adoption": "piloting" }],
+      "products": [
+        { "name": "Mergdata", "description": "Farmer registry, field data collection and supply-chain management for agribusinesses.", "category": "saas", "url": "https://mergdata.com" }
+      ],
+      "people": [
+        { "name": "Alloysius Attah", "role": "founder", "title": "Co-founder & CEO", "is_founder": true },
+        { "name": "Emmanuel Addai", "role": "founder", "title": "Co-founder", "is_founder": true }
+      ],
+      "funding": [],
+      "competitors": [
+        { "name": "Esoko", "competition_type": "direct" },
+        { "name": "Complete Farmer", "competition_type": "indirect" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://farmerline.co", "title": "Farmerline official website", "publisher": "Farmerline", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Esoko",
+      "legal_name": "Esoko Ghana Limited",
+      "org_type": "scaleup",
+      "description": "Agritech providing agricultural market data, farmer profiling and digital advisory services across Africa.",
+      "overview": "Esoko is one of Africa's early agritech companies, founded in Ghana, providing commodity price data and SMS/IVR-based farmer services. It pioneered digital agricultural information services and continues to serve agribusinesses across several African markets.",
+      "founded_year": 2008,
+      "hq_city": "Accra",
+      "website": "https://esoko.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/esoko", "twitter": "https://twitter.com/esoko" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "growth",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.75,
+      "sectors": ["Agritech"],
+      "technologies": [{ "name": "Voice AI", "adoption": "adopted" }],
+      "products": [
+        { "name": "Esoko Platform", "description": "Market prices, farmer profiling and digital extension services.", "category": "platform", "url": "https://esoko.com" }
+      ],
+      "people": [],
+      "funding": [],
+      "competitors": [
+        { "name": "Farmerline", "competition_type": "direct" },
+        { "name": "AgroCenta", "competition_type": "indirect" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://esoko.com", "title": "Esoko official website", "publisher": "Esoko", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "mPharma",
+      "legal_name": "mPharma Limited",
+      "org_type": "scaleup",
+      "description": "Healthtech building pharmaceutical supply-chain and retail pharmacy infrastructure across Africa, with significant Ghana operations.",
+      "overview": "mPharma is a pan-African healthtech headquartered in Accra that aggregates pharmacy demand, improves drug supply chains and operates the HealthPlus and DrugStores pharmacy retail brands. It is among the most prominent African healthtech companies with Ghana at its centre.",
+      "founded_year": 2013,
+      "hq_city": "Accra",
+      "website": "https://mpharma.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/mpharma", "twitter": "https://twitter.com/mpharma" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "series_c",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["HealthTech", "MedTech", "Data Infrastructure"],
+      "technologies": [{ "name": "Cloud Native", "adoption": "adopted" }],
+      "products": [
+        { "name": "mPharma Supply Chain", "description": "Drug supply-chain management and pharmacy retail network.", "category": "platform", "url": "https://mpharma.com" }
+      ],
+      "people": [
+        { "name": "Gregory Rockson", "role": "founder", "title": "Co-founder & CEO", "is_founder": true },
+        { "name": "Daniel Shu", "role": "founder", "title": "Co-founder", "is_founder": true }
+      ],
+      "funding": [],
+      "competitors": [
+        { "name": "Redbird", "competition_type": "indirect" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://mpharma.com", "title": "mPharma official website", "publisher": "mPharma", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "MEST",
+      "legal_name": "Meltwater Entrepreneurial School of Technology",
+      "org_type": "incubator",
+      "description": "Pan-African tech training programme and incubator based in Accra, providing seed funding, training and mentorship to African startups.",
+      "overview": "MEST (Meltwater Entrepreneurial School of Technology) is one of West Africa's most established technology incubators. Its Accra campus trains software entrepreneurs, funds early-stage startups through MEST portfolio funding, and has produced notable companies across Africa.",
+      "founded_year": 2008,
+      "hq_city": "Accra",
+      "website": "https://meltwater.org",
+      "socials": { "linkedin": "https://www.linkedin.com/company/mestafrica", "twitter": "https://twitter.com/mestafrica" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["EdTech", "Developer Tools"],
+      "technologies": [],
+      "products": [
+        { "name": "MEST Training Programme", "description": "Residential software entrepreneurship training and incubation.", "category": "platform", "url": "https://meltwater.org" }
+      ],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://meltwater.org", "title": "MEST official website", "publisher": "MEST", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Ashesi University",
+      "legal_name": "Ashesi University",
+      "org_type": "university",
+      "description": "Private liberal-arts university in Berekuso, Ghana, known for its computer science and engineering programmes and entrepreneurship culture.",
+      "overview": "Ashesi University is a highly regarded Ghanaian university founded by Patrick Awuah. Its engineering and computer science programmes and its emphasis on ethics and leadership have made it a major talent source for Ghana's technology ecosystem.",
+      "founded_year": 2002,
+      "hq_city": "Berekuso",
+      "website": "https://ashesi.edu.gh",
+      "socials": { "linkedin": "https://www.linkedin.com/school/ashesi-university", "twitter": "https://twitter.com/ashesi" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "verified",
+      "confidence": 0.9,
+      "sectors": ["EdTech", "DeepTech"],
+      "technologies": [{ "name": "AI Agents", "adoption": "piloting" }],
+      "products": [],
+      "people": [{ "name": "Patrick Awuah", "role": "founder", "title": "Founder & President", "is_founder": true }],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://ashesi.edu.gh", "title": "Ashesi University official website", "publisher": "Ashesi University", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "KNUST",
+      "legal_name": "Kwame Nkrumah University of Science and Technology",
+      "org_type": "university",
+      "description": "Ghana's leading science and technology university, based in Kumasi, with strong engineering, architecture and technology faculties.",
+      "overview": "KNUST is Ghana's premier science and technology university. Its engineering, architecture, and computer science faculties feed the national technology workforce, and its Kumasi location anchors the technology ecosystem of the Ashanti region.",
+      "founded_year": 1952,
+      "hq_city": "Kumasi",
+      "website": "https://knust.edu.gh",
+      "socials": { "linkedin": "https://www.linkedin.com/school/knust", "twitter": "https://twitter.com/KNUST_Kumasi" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "verified",
+      "confidence": 0.9,
+      "sectors": ["EdTech", "DeepTech", "AEC Technology"],
+      "technologies": [{ "name": "BIM", "adoption": "piloting" }],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://knust.edu.gh", "title": "KNUST official website", "publisher": "KNUST", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "University of Ghana",
+      "legal_name": "University of Ghana",
+      "org_type": "university",
+      "description": "Ghana's oldest and largest public university, based in Legon, Accra, with major research programmes across sciences and humanities.",
+      "overview": "The University of Ghana is the country's premier research university. Its computer science, statistics and data science programmes, plus research institutes, make it a core institution in Ghana's technology and research landscape.",
+      "founded_year": 1948,
+      "hq_city": "Accra",
+      "website": "https://ug.edu.gh",
+      "socials": { "linkedin": "https://www.linkedin.com/school/university-of-ghana", "twitter": "https://twitter.com/UnivofGh" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "verified",
+      "confidence": 0.9,
+      "sectors": ["EdTech", "Research"],
+      "technologies": [],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://ug.edu.gh", "title": "University of Ghana official website", "publisher": "University of Ghana", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Ghana Web",
+      "legal_name": "GhanaWeb",
+      "org_type": "media",
+      "description": "One of Ghana's most visited news and information websites, covering news, business, sports and technology.",
+      "overview": "GhanaWeb is the leading Ghanaian digital media property, operating news, a forum and an extensive information service. It is a primary channel through which Ghana's technology developments reach public audiences.",
+      "founded_year": 1999,
+      "hq_city": "Accra",
+      "website": "https://www.ghanaweb.com",
+      "socials": { "linkedin": null, "twitter": "https://twitter.com/ghanaweb" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["MediaTech"],
+      "technologies": [],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://www.ghanaweb.com", "title": "GhanaWeb official website", "publisher": "GhanaWeb", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "MeQasa",
+      "legal_name": "MeQasa Limited",
+      "org_type": "startup",
+      "description": "Ghana's leading online real-estate marketplace connecting buyers, sellers and renters with agents and listings.",
+      "overview": "MeQasa is the largest property listing platform in Ghana, with thousands of verified properties and an agent network. It is the anchor player in Ghana's early PropTech market.",
+      "founded_year": 2013,
+      "hq_city": "Accra",
+      "website": "https://meqasa.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/meqasa", "twitter": "https://twitter.com/meqasa" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "growth",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["PropTech", "Real Estate Technology"],
+      "technologies": [],
+      "products": [
+        { "name": "MeQasa Marketplace", "description": "Online property search and real-estate agent marketplace.", "category": "platform", "url": "https://meqasa.com" }
+      ],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://meqasa.com", "title": "MeQasa official website", "publisher": "MeQasa", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Ghana Interbank Payment and Settlement Systems",
+      "legal_name": "Ghana Interbank Payment and Settlement Systems Limited (GhIPSS)",
+      "org_type": "infrastructure",
+      "description": "State-owned company operating Ghana's national payment and settlement systems, including the GhIPSS Instant Pay, e-bills and cheque codeline clearing.",
+      "overview": "GhIPSS is the backbone of Ghana's digital payment infrastructure, operating the interbank settlement systems that connect banks and mobile money. It is central to financial inclusion policy and interoperability initiatives in Ghana.",
+      "founded_year": 2007,
+      "hq_city": "Accra",
+      "website": "https://www.ghipss.net",
+      "socials": { "linkedin": "https://www.linkedin.com/company/ghipss", "twitter": "https://twitter.com/GhIPSS" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["Payments", "Banking Technology", "APIs / Infrastructure"],
+      "technologies": [{ "name": "Open Banking", "adoption": "piloting" }],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://www.ghipss.net", "title": "GhIPSS official website", "publisher": "GhIPSS", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Bank of Ghana",
+      "legal_name": "Bank of Ghana",
+      "org_type": "regulator",
+      "description": "Ghana's central bank, responsible for monetary policy, financial stability and the regulation of banks and fintechs, including the e-cedi digital currency programme.",
+      "overview": "The Bank of Ghana regulates the banking and payments sectors in which Ghana's fintech ecosystem operates. Its licensing regimes (Payment Systems and Services Act 2019) and its e-cedi digital currency pilot make it a pivotal actor shaping Ghana's financial technology landscape.",
+      "founded_year": 1957,
+      "hq_city": "Accra",
+      "website": "https://www.bog.gov.gh",
+      "socials": { "linkedin": null, "twitter": "https://twitter.com/thebankofghana" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "verified",
+      "confidence": 0.9,
+      "sectors": ["Banking Technology", "Payments", "Regulatory"],
+      "technologies": [{ "name": "Blockchain", "adoption": "piloting" }],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://www.bog.gov.gh", "title": "Bank of Ghana official website", "publisher": "Bank of Ghana", "source_type": "government", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Telecel Ghana",
+      "legal_name": "Telecel Ghana Limited",
+      "org_type": "telecom",
+      "description": "Telecom operator formerly known as Vodafone Ghana, operating mobile, fixed and enterprise connectivity services.",
+      "overview": "Telecel Ghana acquired Vodafone Ghana's operations in 2024, rebranding one of Ghana's three major mobile operators. The company operates 4G mobile, fixed-line and enterprise services and is a major player in Ghana's connectivity market.",
+      "founded_year": 1992,
+      "hq_city": "Accra",
+      "website": "https://www.telecel.com.gh",
+      "socials": { "linkedin": "https://www.linkedin.com/company/telecel-ghana", "twitter": "https://twitter.com/TelecelGhana" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.75,
+      "sectors": ["Telecom"],
+      "technologies": [],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [
+        { "name": "MTN Ghana", "competition_type": "direct" },
+        { "name": "AT Ghana", "competition_type": "direct" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://www.telecel.com.gh", "title": "Telecel Ghana official website", "publisher": "Telecel Ghana", "source_type": "official", "reliability": 0.9 }
+      ]
+    },
+    {
+      "name": "AT Ghana",
+      "legal_name": "AT Ghana (AirtelTigo)",
+      "org_type": "telecom",
+      "description": "Telecom operator formed from the merger of Airtel and Tigo Ghana, operating mobile and data services.",
+      "overview": "AT Ghana (formerly AirtelTigo) is the third major mobile operator in Ghana, serving consumers and enterprises with voice, data and mobile money services. It is majority owned by the Government of Ghana following an acquisition by the state.",
+      "founded_year": 2017,
+      "hq_city": "Accra",
+      "website": "https://www.atghana.com",
+      "socials": { "linkedin": null, "twitter": "https://twitter.com/at_ghana" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.7,
+      "sectors": ["Telecom"],
+      "technologies": [],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [
+        { "name": "MTN Ghana", "competition_type": "direct" },
+        { "name": "Telecel Ghana", "competition_type": "direct" }
+      ],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://www.atghana.com", "title": "AT Ghana official website", "publisher": "AT Ghana", "source_type": "official", "reliability": 0.9 }
+      ]
+    },
+    {
+      "name": "Jumia Ghana",
+      "legal_name": "Jumia Technologies Ghana",
+      "org_type": "corporation",
+      "description": "E-commerce marketplace and logistics platform operating in Ghana as part of the pan-African Jumia Group.",
+      "overview": "Jumia Ghana is part of Jumia Group, Africa's largest listed e-commerce company. It operates marketplace and logistics services in Ghana and is a reference point for the country's online retail and delivery ecosystem.",
+      "founded_year": 2013,
+      "hq_city": "Accra",
+      "website": "https://www.jumia.com.gh",
+      "socials": { "linkedin": "https://www.linkedin.com/company/jumia", "twitter": "https://twitter.com/Jumia_Ghana" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "public",
+      "status": "active",
+      "verification_status": "verified",
+      "confidence": 0.85,
+      "sectors": ["E-commerce", "LogisticsTech"],
+      "technologies": [],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://www.jumia.com.gh", "title": "Jumia Ghana official website", "publisher": "Jumia Ghana", "source_type": "official", "reliability": 0.95 }
+      ]
+    },
+    {
+      "name": "Gabochie Design",
+      "legal_name": null,
+      "org_type": "startup",
+      "description": "Architecture and design studio applying AI and computational methods to architecture, engineering and construction.",
+      "overview": "Gabochie Design is an architecture-led practice building AI-assisted design and construction cost intelligence capabilities for Ghana's AEC market, including the BuildCostGH platform.",
+      "founded_year": null,
+      "hq_city": "Accra",
+      "website": "https://gabochiedesign.com",
+      "socials": { "linkedin": null, "twitter": null },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "bootstrapped",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.6,
+      "sectors": ["AEC Technology", "Construction Cost Intelligence", "ConTech", "AI"],
+      "technologies": [{ "name": "AI Agents", "adoption": "adopted" }, { "name": "BIM", "adoption": "adopted" }],
+      "products": [
+        { "name": "Gabochie Design Studio", "description": "Architecture, design and AI-assisted design services.", "category": "platform", "url": "https://gabochiedesign.com" }
+      ],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://gabochiedesign.com", "title": "Gabochie Design official website", "publisher": "Gabochie Design", "source_type": "official", "reliability": 0.9 }
+      ]
+    },
+    {
+      "name": "BuildCostGH",
+      "legal_name": null,
+      "org_type": "startup",
+      "description": "Construction cost estimation and cost intelligence platform for the Ghanaian market, powered by AI.",
+      "overview": "BuildCostGH provides construction cost estimation and cost intelligence for Ghana, aimed at developers, contractors and consultants. It is part of the Gabochie Design venture family and targets Ghana's AEC cost-data gap.",
+      "founded_year": null,
+      "hq_city": "Accra",
+      "website": "https://buildcostgh.com",
+      "socials": { "linkedin": null, "twitter": null },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "bootstrapped",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.6,
+      "sectors": ["Construction Cost Intelligence", "ConTech", "AEC Technology", "AI"],
+      "technologies": [{ "name": "AI Agents", "adoption": "adopted" }, { "name": "LLMs", "adoption": "adopted" }],
+      "products": [
+        { "name": "BuildCostGH Estimator", "description": "AI-assisted construction cost estimation for Ghana.", "category": "saas", "url": "https://buildcostgh.com" }
+      ],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://buildcostgh.com", "title": "BuildCostGH official website", "publisher": "BuildCostGH", "source_type": "official", "reliability": 0.9 }
+      ]
+    },
+    {
+      "name": "Aya Data",
+      "legal_name": "Aya Data",
+      "org_type": "startup",
+      "description": "Ghana-based AI and data company providing data annotation, machine learning and AI solutions for African and global clients.",
+      "overview": "Aya Data is a Ghanaian AI company offering data annotation, ML model development and AI strategy services. It is one of the clearest examples of a Ghana-born AI infrastructure player serving international demand.",
+      "founded_year": 2019,
+      "hq_city": "Accra",
+      "website": "https://ayadata.ai",
+      "socials": { "linkedin": "https://www.linkedin.com/company/aya-data", "twitter": "https://twitter.com/ayadata_ai" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "bootstrapped",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.7,
+      "sectors": ["AI", "Data Infrastructure", "AI Infrastructure"],
+      "technologies": [{ "name": "LLMs", "adoption": "adopted" }, { "name": "Computer Vision", "adoption": "adopted" }],
+      "products": [
+        { "name": "Data Annotation Services", "description": "AI data collection and annotation for ML teams.", "category": "ai", "url": "https://ayadata.ai" }
+      ],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://ayadata.ai", "title": "Aya Data official website", "publisher": "Aya Data", "source_type": "official", "reliability": 0.9 }
+      ]
+    },
+    {
+      "name": "Swoove",
+      "legal_name": "Swoove Ghana Limited",
+      "org_type": "startup",
+      "description": "On-demand logistics network connecting shippers with a distributed fleet of delivery partners across Ghana.",
+      "overview": "Swoove operates a crowdsourced delivery network in Ghana, serving e-commerce, retail and enterprise clients. It represents the emerging logistics technology layer of Ghana's digital economy.",
+      "founded_year": 2019,
+      "hq_city": "Accra",
+      "website": "https://swoove.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/swoove", "twitter": "https://twitter.com/swoovegh" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "seed",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.7,
+      "sectors": ["LogisticsTech"],
+      "technologies": [],
+      "products": [
+        { "name": "Swoove Delivery Network", "description": "On-demand, crowdsourced delivery for businesses.", "category": "platform", "url": "https://swoove.com" }
+      ],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://swoove.com", "title": "Swoove official website", "publisher": "Swoove", "source_type": "official", "reliability": 0.9 }
+      ]
+    },
+    {
+      "name": "iSpace Foundation",
+      "legal_name": "iSpace Foundation",
+      "org_type": "incubator",
+      "description": "Community tech hub and incubator in Accra supporting startups, developers and digital skills training.",
+      "overview": "iSpace is one of Ghana's most active community tech hubs, providing co-working, incubation and training programmes. It has supported a generation of Ghanaian tech entrepreneurs and community initiatives.",
+      "founded_year": 2013,
+      "hq_city": "Accra",
+      "website": "https://ispace.com.gh",
+      "socials": { "linkedin": "https://www.linkedin.com/company/ispaceghana", "twitter": "https://twitter.com/ispaceghana" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.75,
+      "sectors": ["Developer Tools", "EdTech"],
+      "technologies": [],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://ispace.com.gh", "title": "iSpace Foundation official website", "publisher": "iSpace", "source_type": "official", "reliability": 0.9 }
+      ]
+    },
+    {
+      "name": "Ghana Tech Lab",
+      "legal_name": "Ghana Tech Lab",
+      "org_type": "incubator",
+      "description": "Technology innovation hub and accelerator in Accra offering incubation, maker space and digital skills programmes.",
+      "overview": "Ghana Tech Lab is a government-aligned innovation hub supporting startups and digital skills across Ghana, operating an accelerator and physical lab space in Accra. It plays a role in national entrepreneurship policy implementation.",
+      "founded_year": 2017,
+      "hq_city": "Accra",
+      "website": "https://ghanatechlab.com",
+      "socials": { "linkedin": "https://www.linkedin.com/company/ghana-tech-lab", "twitter": "https://twitter.com/ghanatechlab" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.75,
+      "sectors": ["EdTech", "Developer Tools", "GovTech"],
+      "technologies": [],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://ghanatechlab.com", "title": "Ghana Tech Lab official website", "publisher": "Ghana Tech Lab", "source_type": "official", "reliability": 0.9 }
+      ]
+    },
+    {
+      "name": "National Information Technology Agency",
+      "legal_name": "National Information Technology Agency (NITA)",
+      "org_type": "government",
+      "description": "Ghanaian government agency responsible for IT policy, e-government infrastructure and public-sector digitalisation.",
+      "overview": "NITA drives Ghana's public-sector digitalisation: government data centres, shared IT services, and policy implementation under the Ministry of Communications and Digitalisation. It is central to Ghana's GovTech landscape.",
+      "founded_year": 2008,
+      "hq_city": "Accra",
+      "website": "https://nita.gov.gh",
+      "socials": { "linkedin": null, "twitter": "https://twitter.com/NITAGhana" },
+      "email": null,
+      "employee_count": null,
+      "funding_status": "unknown",
+      "status": "active",
+      "verification_status": "reported",
+      "confidence": 0.8,
+      "sectors": ["GovTech", "Cloud / Data Centres"],
+      "technologies": [],
+      "products": [],
+      "people": [],
+      "funding": [],
+      "competitors": [],
+      "partnerships": [],
+      "sources": [
+        { "url": "https://nita.gov.gh", "title": "NITA official website", "publisher": "NITA", "source_type": "government", "reliability": 0.95 }
+      ]
+    }
+  ]
+}
