@@ -2,9 +2,24 @@
 // GTPM — /api/intelligence (spec §12 Daily Brief + strategic summaries)
 // ============================================================
 import { Hono } from 'hono';
+import type { Context } from 'hono';
 import type { D1Database } from '../types-d1';
+import { uuid, nowIso } from '../lib/utils';
+import { scoreAllOrganizations } from '../lib/scoring';
+import { snapshotAllOrganizations } from '../lib/monitor';
 
-const app = new Hono<{ Bindings: { DB: D1Database } }>();
+const app = new Hono<{ Bindings: { DB: D1Database; API_KEY_HASH?: string } }>();
+
+// In-memory gate so the POST endpoints can't be hammered in dev.
+const RUN_LOCK = { active: false };
+
+/** Write gate for the run/score endpoints (Phase 4 precursor, mirrors index.ts). */
+async function requireWrite(c: Context<{ Bindings: { DB: D1Database; API_KEY_HASH?: string } }>): Promise<boolean> {
+  const key = c.req.header('x-api-key');
+  if (!key) return false;
+  const expected = c.env.API_KEY_HASH;
+  return expected ? key === expected : true;
+}
 
 /** GET /api/intelligence/brief — the GTPM Daily Brief structure (spec §12) */
 app.get('/brief', async (c) => {
@@ -52,6 +67,65 @@ app.get('/market', async (c) => {
     LEFT JOIN signals si ON si.organization_id = os.organization_id
     GROUP BY s.id HAVING signal_count > 0 ORDER BY signal_count DESC`).all<Record<string, unknown>>();
   return c.json({ data: { by_sector: bySector.results, momentum } });
+});
+
+/** GET /api/intelligence/runs — recent agent run history */
+app.get('/runs', async (c) => {
+  const db = c.env.DB;
+  const rows = await db.prepare(
+    `SELECT id, agent_name, status, items_processed, started_at, finished_at, output
+     FROM agent_runs ORDER BY started_at DESC LIMIT 20`
+  ).all<Record<string, unknown>>();
+  return c.json({ data: rows.results });
+});
+
+function agentRunInsert(db: D1Database, agentName: string, status: string, items: number, output: string, started: string, error: string | null = null) {
+  return db.prepare(
+    `INSERT INTO agent_runs (id, agent_name, status, input, output, error, items_processed, started_at, finished_at)
+     VALUES (?, ?, ?, '{}', ?, ?, ?, ?, ?)`
+  ).bind(uuid(), agentName, status, output, error, items, started, nowIso());
+}
+
+/** POST /api/intelligence/score — recompute all organisation scores */
+app.post('/score', async (c) => {
+  if (!(await requireWrite(c))) return c.json({ error: 'api_key_required' }, 401);
+  if (RUN_LOCK.active) return c.json({ error: 'run_in_progress' }, 409);
+  RUN_LOCK.active = true;
+  const db = c.env.DB;
+  const started = nowIso();
+  try {
+    const summary = await scoreAllOrganizations(db);
+    await agentRunInsert(db, 'scoring', 'success', summary.orgs_scored, JSON.stringify(summary), started).run();
+    return c.json({ data: summary });
+  } catch (e) {
+    await agentRunInsert(db, 'scoring', 'failed', 0, '{}', started, String(e)).run();
+    return c.json({ error: 'scoring_failed', detail: String(e) }, 500);
+  } finally {
+    RUN_LOCK.active = false;
+  }
+});
+
+/** POST /api/intelligence/run — full monitor pass: score + snapshot + log */
+app.post('/run', async (c) => {
+  if (!(await requireWrite(c))) return c.json({ error: 'api_key_required' }, 401);
+  if (RUN_LOCK.active) return c.json({ error: 'run_in_progress' }, 409);
+  RUN_LOCK.active = true;
+  const db = c.env.DB;
+  const started = nowIso();
+  try {
+    const [scoreSummary, monitorSummary] = await Promise.all([
+      scoreAllOrganizations(db),
+      snapshotAllOrganizations(db),
+    ]);
+    const output = JSON.stringify({ scoring: scoreSummary, monitoring: monitorSummary });
+    await agentRunInsert(db, 'full_monitor', 'success', scoreSummary.orgs_scored, output, started).run();
+    return c.json({ data: { scoring: scoreSummary, monitoring: monitorSummary } });
+  } catch (e) {
+    await agentRunInsert(db, 'full_monitor', 'failed', 0, '{}', started, String(e)).run();
+    return c.json({ error: 'monitor_run_failed', detail: String(e) }, 500);
+  } finally {
+    RUN_LOCK.active = false;
+  }
 });
 
 export default app;

@@ -140,7 +140,7 @@ function growthMomentum(input: ScoreInput) {
   const score = clamp(sigScore * 0.6 + evScore * 0.4);
   const evidence = [
     ...recentSignals.slice(0, 4).map((s) => `signal: ${s.title}`),
-    ...recentEvents.slice(0, 3).map((e) => `event: ${e.title}`),
+    ...recentEvents.slice(0, 3).map((e) => `event: ${e.event_type}`),
     `${recentSignals.length} signal(s) and ${recentEvents.length} event(s) in the last 180 days`,
   ];
   return {
@@ -237,9 +237,7 @@ function innovationVelocity(input: ScoreInput) {
   twoYearsAgo.setFullYear(twoYearsAgo.getFullYear() - 2);
   const launches = input.products.filter((p) => p.launch_date && new Date(p.launch_date) >= twoYearsAgo).length;
   const adoptedTech = input.techs.filter((t) => t.adoption_level === 'adopted' || t.adoption_level === 'advanced').length;
-  const launchEvents = input.events.filter((e) => ['launch', 'product', 'expansion'].includes(e.event_type) && {
-    d: daysSince(e.date),
-  } && (daysSince(e.date) ?? 999) <= 730).length;
+  const launchEvents = input.events.filter((e) => ['launch', 'product', 'expansion'].includes(e.event_type) && (daysSince(e.date) ?? 999) <= 730).length;
   const score = clamp(launches * 12 + adoptedTech * 8 + launchEvents * 7);
   const evidence = [
     `${launches} product launch(es) in the last 2 years`,
