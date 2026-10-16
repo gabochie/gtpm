@@ -8,3 +8,5 @@ seed/seed.sql
 .codegraph/
 .omo/
 gtpm/
+
+.playwright-mcp/
