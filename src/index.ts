@@ -4,6 +4,9 @@
 // ============================================================
 import { Hono } from 'hono';
 import type { D1Database } from './types-d1';
+import { uuid, nowIso } from './lib/utils';
+import { scoreAllOrganizations } from './lib/scoring';
+import { snapshotAllOrganizations } from './lib/monitor';
 import companies from './routes/companies';
 import people from './routes/people';
 import sectors from './routes/sectors';
@@ -17,6 +20,8 @@ import search from './routes/search';
 import intelligence from './routes/intelligence';
 import map from './routes/map';
 import stats from './routes/stats';
+import alerts from './routes/alerts';
+import discovery from './routes/discovery';
 
 type Bindings = {
   DB: D1Database;
@@ -72,7 +77,8 @@ app.route('/api/search', search);
 app.route('/api/intelligence', intelligence);
 app.route('/api/map', map);
 app.route('/api/stats', stats);
-
+app.route('/api', alerts);
+app.route('/api/discovery', discovery);
 app.use('/api/*', async (c, next) => {
   await next();
   if (c.res.status === 404) {
@@ -88,4 +94,32 @@ app.notFound((c) => {
   return c.env.ASSETS.fetch(c.req.raw);
 });
 
-export default app;
+// Scheduled trigger — daily full monitor pass (spec §9 + §10)
+async function runScheduledMonitorPass(db: D1Database): Promise<void> {
+  const started = nowIso();
+  try {
+    const [scoreSummary, monitorSummary] = await Promise.all([
+      scoreAllOrganizations(db),
+      snapshotAllOrganizations(db),
+    ]);
+    const output = JSON.stringify({ scoring: scoreSummary, monitoring: monitorSummary });
+    await db.prepare(
+      `INSERT INTO agent_runs (id, agent_name, status, input, output, error, items_processed, started_at, finished_at)
+       VALUES (?, ?, 'success', '{}', ?, NULL, ?, ?, ?)`
+    ).bind(uuid(), 'full_monitor', output, scoreSummary.orgs_scored, started, nowIso()).run();
+  } catch (e) {
+    await db.prepare(
+      `INSERT INTO agent_runs (id, agent_name, status, input, output, error, items_processed, started_at, finished_at)
+       VALUES (?, ?, 'failed', '{}', '{}', ?, 0, ?, ?)`
+    ).bind(uuid(), 'full_monitor', String(e), started, nowIso()).run();
+  }
+}
+
+const worker: ExportedHandler<Bindings> = {
+  fetch: app.fetch,
+  async scheduled(_event, env, ctx) {
+    ctx.waitUntil(runScheduledMonitorPass(env.DB));
+  },
+};
+
+export default worker;

@@ -143,7 +143,42 @@ const UI = (() => {
     return wrap;
   }
 
-  return { $, $$, esc, initTheme, toggleTheme, initNav, initSearchBox, money, fmtDate, timeAgo, typeLabel, typeClass, impBadge, verifBadge, conf, sparkline, loader, empty, errorBanner, pagination };
+  /* watchlist follow toggle button */
+  function followButton(type, id, name) {
+    const btn = document.createElement('button');
+    btn.className = 'chip follow-btn';
+    btn.type = 'button';
+    let following = false;
+
+    API.watchlists().then((r) => {
+      following = (r.data || []).some((w) => w.entity_type === type && w.entity_id === id);
+      paint();
+    }).catch(() => {});
+
+    function paint() {
+      btn.textContent = following ? '★ Following' : '☆ Follow';
+      btn.classList.toggle('green', following);
+      btn.title = `${following ? 'Unfollow' : 'Follow'} ${name} to ${following ? 'stop' : 'get'} alerts`;
+    }
+
+    btn.addEventListener('click', async () => {
+      if (btn.disabled) return;
+      btn.disabled = true;
+      try {
+        if (following) await API.unfollow(type, id);
+        else await API.follow(type, id);
+        following = !following;
+        paint();
+        if (typeof window.refreshAlertBadge === 'function') window.refreshAlertBadge();
+      } catch (e) { errorBanner(e, btn); }
+      btn.disabled = false;
+    });
+
+    paint();
+    return btn;
+  }
+
+  return { $, $$, esc, initTheme, toggleTheme, initNav, initSearchBox, money, fmtDate, timeAgo, typeLabel, typeClass, impBadge, verifBadge, conf, sparkline, loader, empty, errorBanner, pagination, followButton };
 })();
 
 document.addEventListener('DOMContentLoaded', () => {

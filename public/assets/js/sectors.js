@@ -19,7 +19,10 @@
             <h1 style="font-size:34px">${esc(s.data.name)}</h1>
             <p class="hero-sub" style="font-size:14px;margin-top:8px">${esc(s.data.description ?? '')}</p>
           </div>
-          <a class="sec-link" href="sectors.html">← All sectors</a>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span id="follow-slot"></span>
+            <a class="sec-link" href="sectors.html">← All sectors</a>
+          </div>
         </div>
         <div class="funding-hero">
           <div class="fh-card"><div class="fh-val">${orgs.length}</div><div class="fh-label">Organisations mapped</div></div>
@@ -59,6 +62,8 @@
           <div class="sec-head"><div><span class="sec-kicker">Technology</span><h2>Technologies used here</h2></div></div>
           <div class="pill-row">${techs.map((t) => `<a class="chip ${t.radar_ring === 'ACCELERATING' ? 'gold' : t.radar_ring === 'MAINSTREAM' ? 'green' : ''}" href="technologies.html?slug=${esc(t.slug)}">${esc(t.name)} · ${t.org_count} orgs</a>`).join('')}</div>
         </section>` : ''}`;
+      const followSlot = $('#follow-slot');
+      if (followSlot) followSlot.replaceWith(UI.followButton('sector', s.data.id, s.data.name));
     } catch (e) { root.innerHTML = ''; UI.errorBanner(e, root); }
     return;
   }

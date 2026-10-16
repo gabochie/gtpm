@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alerts — GTPM</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%231db880' d='M12 2l2.4 6.2L21 9.2l-5 4.4 1.5 6.4L12 16.6 6.5 20l1.5-6.4-5-4.4 6.6-1L12 2z'/></svg>"/>
+  <link rel="stylesheet" href="assets/css/gtpm.css"/>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/ui.js"></script>
+  <script defer src="assets/js/layout.js"></script>
+  <script defer src="assets/js/alerts.js"></script>
+</head>
+<body>
+<main class="wrap">
+  <section class="hero" style="padding:32px 0 24px">
+    <div class="hero-kicker">Competitive Alerts</div>
+    <h1 style="font-size:38px">Alerts</h1>
+    <p class="hero-sub" style="font-size:15px">Follow organisations, sectors, technologies and people — when something moves, you'll hear about it here.</p>
+  </section>
+  <div class="filters">
+    <select id="f-imp"><option value="">All importance</option><option value="critical">Critical</option><option value="important">Important</option><option value="signal">Signal</option></select>
+    <label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox" id="f-unread"/> Unread only</label>
+    <button id="mark-read" class="chip">Mark all read</button>
+  </div>
+  <div id="alerts-list"></div>
+  <div id="pager"></div>
+  <section style="margin-top:36px">
+    <div class="sec-head"><div><span class="sec-kicker">Watchlist</span><h2>Following</h2></div></div>
+    <div id="watchlist-root"></div>
+  </section>
+</main>
+</body>
+</html>

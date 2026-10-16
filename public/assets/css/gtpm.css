@@ -148,6 +148,7 @@ code { font-family: var(--font-mono); font-size: 0.92em; }
 .nav-list a:hover { color: var(--text); background: var(--panel); text-decoration: none; }
 .nav-list a.active { color: var(--green); border-bottom-color: var(--green); }
 .nav-list a .nav-count { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-3); margin-left: 4px; }
+.nav-list a.has-unread .nav-count { color: var(--gold); font-weight: 600; }
 
 /* ---------- Layout ---------- */
 .wrap { max-width: 1440px; margin: 0 auto; padding: 24px 24px 80px; }
@@ -234,6 +235,10 @@ code { font-family: var(--font-mono); font-size: 0.92em; }
 .chip.blue { background: var(--blue-soft); border-color: transparent; color: var(--blue); }
 .chip.purple { background: var(--purple-soft); border-color: transparent; color: var(--purple); }
 .chip.cyan { background: var(--cyan-soft); border-color: transparent; color: var(--cyan); }
+button.chip { font-family: var(--font-body); cursor: pointer; }
+button.chip:hover:not(:disabled) { border-color: var(--green); color: var(--green); }
+button.chip:disabled { opacity: 0.5; cursor: default; }
+button.chip.green:hover:not(:disabled) { border-color: var(--green); color: var(--green); }
 .badge-imp { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; font-weight: 600; }
 .badge-imp.critical { background: var(--red-soft); color: var(--red); }
 .badge-imp.important { background: var(--gold-soft); color: var(--gold); }
@@ -278,6 +283,7 @@ table.data td.mono, table.data th.mono { font-family: var(--font-mono); font-siz
 
 /* ---------- Signal cards ---------- */
 .signal-item { display: flex; gap: 12px; padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--panel); }
+.signal-item.alert-unread { border-color: var(--gold); background: var(--gold-soft); }
 .signal-item + .signal-item { margin-top: 8px; }
 .signal-item .sig-ico { flex-shrink: 0; width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; font-size: 15px; background: var(--panel-2); }
 .signal-item .sig-body { min-width: 0; }

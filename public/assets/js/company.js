@@ -37,6 +37,7 @@
           ${org.hq_location ? `<span class="chip">📍 ${esc(org.hq_location.name)}</span>` : ''}
           ${org.funding_status ? `<span class="chip gold">${esc(org.funding_status.replace(/_/g, ' '))}</span>` : ''}
           ${org.is_seed ? '<span class="chip">★ seed portfolio</span>' : ''}
+          <span id="follow-slot"></span>
         </div>
       </div>
     </div>
@@ -196,4 +197,6 @@
       <div>${timeline}${signals}${products}</div>
       <div class="flow" style="display:grid;gap:16px">${fundingSide}${competitors}${partners}${people}${sources}</div>
     </div>`;
+  const followSlot = $('#follow-slot');
+  if (followSlot) followSlot.replaceWith(UI.followButton('organization', org.id, org.name));
 })();

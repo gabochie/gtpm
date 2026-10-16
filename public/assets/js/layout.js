@@ -8,6 +8,7 @@
     ['Technologies', 'technologies.html'],
     ['Funding', 'funding.html'],
     ['Signals', 'signals.html'],
+    ['Alerts', 'alerts.html'],
     ['Opportunities', 'opportunities.html'],
     ['Reports', 'reports.html'],
     ['Search', 'search.html'],
@@ -87,6 +88,20 @@
     </footer>`;
   }
 
+  async function refreshAlertBadge() {
+    const link = document.querySelector('a[href="alerts.html"]');
+    const badge = link && link.querySelector('.nav-count');
+    if (!link || !badge) return;
+    try {
+      const r = await API.alertsUnreadCount();
+      const n = r?.data?.unread ?? 0;
+      badge.textContent = n > 0 ? `${n}` : '';
+      link.classList.toggle('has-unread', n > 0);
+    } catch { badge.textContent = ''; }
+  }
+  /* called from alerts.js after marking alerts read */
+  window.refreshAlertBadge = refreshAlertBadge;
+
   function mount() {
     const body = document.body;
     const headerHost = document.createElement('div');
@@ -97,6 +112,7 @@
     footerHost.id = 'site-footer-host';
     footerHost.innerHTML = footerHTML();
     body.appendChild(footerHost);
+    refreshAlertBadge();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount);

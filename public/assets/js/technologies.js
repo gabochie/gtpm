@@ -19,7 +19,10 @@
             <h1 style="font-size:34px">${esc(d.name)}</h1>
             <p class="hero-sub" style="font-size:14px;margin-top:8px">${esc(d.description ?? '')}</p>
           </div>
-          <a class="sec-link" href="technologies.html">← Full radar</a>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span id="follow-slot"></span>
+            <a class="sec-link" href="technologies.html">← Full radar</a>
+          </div>
         </div>
         <div class="funding-hero">
           <div class="fh-card"><div class="fh-val">${esc(d.radar_ring)}</div><div class="fh-label">Radar ring</div></div>
@@ -42,6 +45,8 @@
             </tbody>
           </table></div>
         </section>`;
+      const followSlot = $('#follow-slot');
+      if (followSlot) followSlot.replaceWith(UI.followButton('technology', d.id, d.name));
     } catch (e) { main.innerHTML = ''; UI.errorBanner(e, main); }
     return;
   }
